@@ -1,0 +1,7 @@
+- React'ın son sürümünü kullan
+- Laravel/Inertia uyumlu olsun.
+- Tailwind 4.1 ve üzeri
+- shadcn ui
+- Grid kullan
+- SEO uyumlu ve HTML semantik olsun.
+- JSX/JS kullan, TypeScript (TSX/TS) kullanma.

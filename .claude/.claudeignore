@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+.cache/
+
+# Development
+.vscode/
+.idea/
+*.log
+.env.local
+.env.*.local
+
+# Testing
+coverage/
+.nyc_output/
+*.test.js.snap
+
+# Assets (large files)
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.woff
+*.woff2
+*.ttf
+*.eot
+
+# Documentation (refer instead of including)
+README.md
+CHANGELOG.md
+LICENSE
+
+# Configs (include only when needed)
+.eslintrc*
+.prettierrc*
+tsconfig.json
+
+# Generated/minified
+*.min.js
+*.min.css
+*.map
+
+# OS
+.DS_Store
+Thumbs.db

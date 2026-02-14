@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand Colors */
+  --color-primary: #352EF2;
+  --color-primary-dark: #2A24C2;
+  --color-primary-light: #6B66F5;
+  --color-primary-soft: #EEEDFE;
+
+  /* Text Colors */
+  --color-text-primary: #111111;
+  --color-text-secondary: #555555;
+  --color-text-muted: #999999;
+  --color-text-on-primary: #FFFFFF;
+
+  /* Background Colors */
+  --color-bg: #FAFAFA;
+  --color-bg-warm: #F5F5F7;
+  --color-white: #FFFFFF;
+  --color-black: #111111;
+  --color-surface: #FFFFFF;
+
+  /* Border Colors */
+  --color-border: #E5E5E5;
+  --color-border-strong: #CCCCCC;
+
+  /* Status Colors */
+  --color-positive: #22C55E;
+  --color-negative: #EF4444;
+  --color-accent-gold: #F5A623;
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+
+  /* Gradients */
+  --gradient-hero: linear-gradient(160deg, #352EF2 0%, #1a1578 100%);
+  --gradient-testimonials: linear-gradient(180deg, #1a1578 0%, #352EF2 50%, #6B66F5 100%);
+}
+
+@layer base {
+  html, body {
+    height: 100%;
+  }
+
+  .font-heading {
+    font-family: "DM Sans", sans-serif;
+  }
+
+  .font-body {
+    font-family: "DM Sans", sans-serif;
+  }
+}
