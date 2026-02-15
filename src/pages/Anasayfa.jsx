@@ -1,11 +1,13 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Layout } from '../components/layout/Layout';
 import {
   Send,
   ShieldCheck,
   ChevronDown,
   ChevronRight,
+  ChevronLeft,
   Star,
+  StarHalf,
   Facebook,
   Instagram,
   Twitter,
@@ -51,21 +53,59 @@ const faqItems = [
 const testimonials = [
   {
     quote:
-      'Annem için harika bir bakıcı bulduk. Hem profesyonel hem de çok şefkatli. BakıcıKolay ekibine teşekkür ederiz.',
+      'Annem için harika bir bakıcı bulduk. Ekip çok ilgili ve profesyonel. Her aile bu hizmeti denemeli.',
     name: 'Ayşe Y.',
     role: 'İstanbul',
+    rating: 5,
   },
   {
     quote:
-      'Çocuklarım bakıcılarını çok seviyor. Güvenle işe gidebiliyorum. Harika bir platform, herkese tavsiye ederim.',
+      'Çocuklarım bakıcılarını çok seviyor. Güvenle işime gidebiliyorum. 2 yıldır memnunuz.',
     name: 'Mehmet K.',
     role: 'Ankara',
+    rating: 4.5,
   },
   {
     quote:
-      'Babam için gece bakımı ihtiyacımız vardı. BakıcıKolay sayesinde çok kısa sürede deneyimli bir bakıcı bulduk.',
+      'Babam için gece bakımı ihtiyacımız vardı. Çok kısa sürede profesyonel bakıcı ile eşleştirildik.',
     name: 'Zeynep A.',
     role: 'İzmir',
+    rating: 5,
+  },
+  {
+    quote:
+      'Hasta bakıcımız gerçekten çok iyi. Deneyimli ve sabırlı. Tüm ihtiyaçlarımızı karşılıyor.',
+    name: 'Fatma S.',
+    role: 'Bursa',
+    rating: 4.5,
+  },
+  {
+    quote:
+      '3 aydır aldığımız hizmetten çok memnunuz. Bakıcımız ailemizin bir parçası oldu.',
+    name: 'Hakan D.',
+    role: 'Antalya',
+    rating: 5,
+  },
+  {
+    quote:
+      'Yaşlı bakımında çok tecrübeli bir ekip. Annemin mutluluğu bizim için her şeyden önemli.',
+    name: 'Selin T.',
+    role: 'İstanbul',
+    rating: 5,
+  },
+  {
+    quote:
+      'Profesyonel hizmet, güler yüzlü ekip. Çocuğumuz için en doğru seçimi yaptık.',
+    name: 'Emre B.',
+    role: 'İzmir',
+    rating: 4.5,
+  },
+  {
+    quote:
+      'Referansları doğrulanmış bakıcılar bulmak artık çok kolay. Güvenle tavsiye ederim.',
+    name: 'Derya K.',
+    role: 'Ankara',
+    rating: 5,
   },
 ];
 
@@ -165,24 +205,24 @@ function HeroSection() {
 
           <form className="flex flex-col gap-4" onSubmit={(e) => e.preventDefault()}>
             <div className="flex flex-col gap-4 md:flex-row md:gap-3">
-              <label className="flex flex-1 flex-col gap-1.5">
+              <label className="flex min-w-0 flex-1 flex-col gap-1.5">
                 <span className="font-body text-[13px] font-medium text-[var(--color-text-primary)]">
                   Ad Soyad
                 </span>
                 <input
                   type="text"
                   placeholder="Adınız Soyadınız"
-                  className="h-[46px] rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3.5 font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]"
+                  className="h-[46px] w-full rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3.5 font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]"
                 />
               </label>
-              <label className="flex flex-1 flex-col gap-1.5">
+              <label className="flex min-w-0 flex-1 flex-col gap-1.5">
                 <span className="font-body text-[13px] font-medium text-[var(--color-text-primary)]">
                   Telefon
                 </span>
                 <input
                   type="tel"
                   placeholder="0 (5XX) XXX XX XX"
-                  className="h-[46px] rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3.5 font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]"
+                  className="h-[46px] w-full rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3.5 font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]"
                 />
               </label>
             </div>
@@ -309,6 +349,24 @@ function FaqSection() {
 }
 
 function TestimonialsSection() {
+  const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const checkScroll = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
+  };
+
+  const scroll = (direction) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const cardWidth = 360 + 20;
+    el.scrollBy({ left: direction === 'left' ? -cardWidth : cardWidth, behavior: 'smooth' });
+  };
+
   return (
     <section
       className="w-full px-5 py-12 md:px-20 md:py-20"
@@ -323,40 +381,89 @@ function TestimonialsSection() {
             Binlerce Ailenin Güvenini Kazandık
           </h2>
           <p className="max-w-[560px] font-body text-base leading-relaxed text-white/75">
-            Müşterilerimizin deneyimlerini kendi ağızlarından dinleyin.
+            Müşterilerimizin deneyimlerini ve memnuniyetlerini dinleyin.
           </p>
         </div>
 
-        <div className="grid w-full grid-cols-1 gap-6 md:grid-cols-3">
-          {testimonials.map((t, index) => (
-            <article
-              key={index}
-              className="flex flex-col gap-5 rounded-[var(--radius-lg)] border border-white/20 bg-white/15 p-8 backdrop-blur-xl"
+        <div className="relative w-full">
+          {/* Left arrow */}
+          {canScrollLeft && (
+            <button
+              type="button"
+              onClick={() => scroll('left')}
+              className="absolute -left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-50 md:-left-5"
             >
-              <div className="flex gap-1">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className="h-5 w-5 fill-[var(--color-accent-gold)] text-[var(--color-accent-gold)]"
-                  />
-                ))}
-              </div>
-              <p className="flex-1 font-body text-[15px] leading-relaxed text-white/85">
-                &ldquo;{t.quote}&rdquo;
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/30">
-                  <span className="font-heading text-sm font-bold text-white">
-                    {t.name.charAt(0)}
-                  </span>
+              <ChevronLeft className="h-5 w-5 text-[var(--color-text-primary)]" />
+            </button>
+          )}
+
+          {/* Carousel track */}
+          <div
+            ref={scrollRef}
+            onScroll={checkScroll}
+            className="flex gap-5 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          >
+            {testimonials.map((t, index) => (
+              <article
+                key={index}
+                className="flex w-[280px] shrink-0 flex-col gap-4 rounded-[var(--radius-lg)] border border-[#E5E7EB] bg-white p-7 md:w-[360px] md:gap-5 md:p-8"
+              >
+                <div className="flex gap-1">
+                  {Array.from({ length: 5 }).map((_, i) => {
+                    const fullStars = Math.floor(t.rating);
+                    const hasHalf = t.rating % 1 !== 0;
+                    if (i < fullStars) {
+                      return (
+                        <Star
+                          key={i}
+                          className="h-4 w-4 fill-[var(--color-accent-gold)] text-[var(--color-accent-gold)] md:h-5 md:w-5"
+                        />
+                      );
+                    }
+                    if (i === fullStars && hasHalf) {
+                      return (
+                        <span key={i} className="relative h-4 w-4 md:h-5 md:w-5">
+                          <Star className="absolute inset-0 h-4 w-4 text-[var(--color-accent-gold)] md:h-5 md:w-5" />
+                          <StarHalf className="absolute inset-0 h-4 w-4 fill-[var(--color-accent-gold)] text-[var(--color-accent-gold)] md:h-5 md:w-5" />
+                        </span>
+                      );
+                    }
+                    return (
+                      <Star
+                        key={i}
+                        className="h-4 w-4 text-[var(--color-accent-gold)] md:h-5 md:w-5"
+                      />
+                    );
+                  })}
                 </div>
-                <div className="flex flex-col">
-                  <span className="font-body text-sm font-semibold text-white">{t.name}</span>
-                  <span className="font-body text-xs text-white/60">{t.role}</span>
+                <p className="flex-1 font-body text-[13px] leading-relaxed text-[#374151] md:text-[15px]">
+                  &ldquo;{t.quote}&rdquo;
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-[var(--color-primary)] md:h-10 md:w-10">
+                    <span className="font-heading text-xs font-bold text-white md:text-sm">
+                      {t.name.charAt(0)}
+                    </span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="font-body text-xs font-semibold text-[#1F2937] md:text-sm">{t.name}</span>
+                    <span className="font-body text-[10px] text-[#9CA3AF] md:text-xs">{t.role}</span>
+                  </div>
                 </div>
-              </div>
-            </article>
-          ))}
+              </article>
+            ))}
+          </div>
+
+          {/* Right arrow */}
+          {canScrollRight && (
+            <button
+              type="button"
+              onClick={() => scroll('right')}
+              className="absolute -right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white shadow-lg transition-colors hover:bg-gray-50 md:-right-5"
+            >
+              <ChevronRight className="h-5 w-5 text-[var(--color-text-primary)]" />
+            </button>
+          )}
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Logo } from '../Logo';
 
 export function Footer() {
   return (
@@ -10,12 +11,7 @@ export function Footer() {
       <div className="flex flex-col md:flex-row justify-between gap-10 md:gap-[60px] px-5 md:px-20 py-12">
         {/* Brand */}
         <div className="flex flex-col gap-4 md:w-[300px] items-center md:items-start">
-          <div className="flex items-center gap-2.5">
-            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--color-primary)]">
-              <span className="font-heading text-lg font-bold text-white">B</span>
-            </div>
-            <span className="font-heading text-xl font-bold text-white">BakıcıKolay</span>
-          </div>
+          <Logo variant="white" className="h-7 w-auto" />
           <p className="font-body text-sm text-[#888888] leading-relaxed text-center md:text-left">
             Türkiye&apos;nin güvenilir bakım platformu. Yaşlı ve çocuk bakımında profesyonel çözümler.
           </p>

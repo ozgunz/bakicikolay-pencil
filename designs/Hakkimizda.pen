@@ -1,0 +1,3038 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "7bMZu",
+      "x": 0,
+      "y": 0,
+      "name": "Hakkimizda - Desktop",
+      "clip": true,
+      "width": 1440,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "ZuoBF",
+          "name": "Header --layout",
+          "width": "fill_container",
+          "height": 80,
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border"
+          },
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "OVw1n",
+              "name": "Logo",
+              "width": 250,
+              "height": 44,
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VBWyl",
+                  "name": "LogoBox",
+                  "width": 40,
+                  "height": 40,
+                  "fill": "$primary",
+                  "cornerRadius": "$radius-sm",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "II3rp",
+                      "name": "logoText",
+                      "fill": "$white",
+                      "content": "B",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 22,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "BoX7n",
+                  "name": "logoName",
+                  "fill": "$text-primary",
+                  "content": "BakıcıKolay",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 20,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "u0uqT",
+              "name": "Navigation",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "3dFEB",
+                  "name": "navHome",
+                  "fill": "$text-secondary",
+                  "content": "Ana Sayfa",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "w40Ds",
+                  "name": "navServices",
+                  "fill": "$text-secondary",
+                  "content": "Hizmetler",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "EQLKi",
+                  "name": "navAbout",
+                  "fill": "$primary",
+                  "content": "Hakkımızda",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "semibold"
+                },
+                {
+                  "type": "text",
+                  "id": "bOIoA",
+                  "name": "navContact",
+                  "fill": "$text-secondary",
+                  "content": "İletişim",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "frame",
+                  "id": "HRJUT",
+                  "name": "CTA Button",
+                  "fill": "$primary",
+                  "cornerRadius": "$radius-sm",
+                  "padding": [
+                    10,
+                    24
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "I0C5t",
+                      "name": "ctaText",
+                      "fill": "$white",
+                      "content": "Başvuru Yap",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EruxS",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 160,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#352EF2",
+                "position": 0
+              },
+              {
+                "color": "#1a1578",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": [
+            56,
+            80
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "f1iEH",
+              "name": "breadcrumb",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Lc0J2",
+                  "name": "bcHome",
+                  "fill": "#FFFFFFAA",
+                  "content": "Ana Sayfa",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ZiwJ9",
+                  "name": "bcSep",
+                  "fill": "#FFFFFF66",
+                  "content": "/",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "ySSvn",
+                  "name": "bcCur",
+                  "fill": "$white",
+                  "content": "Hakkımızda",
+                  "fontFamily": "$font-body",
+                  "fontSize": 14,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "1EgV8",
+              "name": "heroTitle",
+              "fill": "$white",
+              "content": "Hakkımızda",
+              "fontFamily": "$font-heading",
+              "fontSize": 40,
+              "fontWeight": "bold",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "J5VJw",
+              "name": "heroDesc",
+              "fill": "#FFFFFFBB",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "2020 yılından bu yana ailelere güvenilir bakım hizmetleri sunuyor, yaşlı ve çocuk bakımında Türkiye'nin en güvenilir platformu olma yolunda ilerliyoruz.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7hIV3",
+          "name": "Story Section",
+          "width": "fill_container",
+          "fill": "$white",
+          "gap": 60,
+          "padding": [
+            72,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "WQ9wm",
+              "name": "storyText",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "s58lL",
+                  "name": "badge",
+                  "fill": "$primary-soft",
+                  "cornerRadius": 20,
+                  "padding": [
+                    6,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Cbf1T",
+                      "name": "storyBadgeText",
+                      "fill": "$primary",
+                      "content": "Hikayemiz",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "7ykEV",
+                  "name": "storyTitle",
+                  "fill": "$text-primary",
+                  "content": "Ailelere Güven,\nBakıcılara Değer",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$font-heading",
+                  "fontSize": 32,
+                  "fontWeight": "bold",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "RUYDs",
+                  "name": "storyP1",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "BakıcıKolay, 2020 yılında İstanbul'da bir ailenin yaşadığı bakıcı bulma zorluğundan doğdu. Kurucumuz, yaşlı annesine güvenilir bir bakıcı ararken yaşadığı sıkıntıları çözmek için bu platformu kurdu.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "GSjzT",
+                  "name": "storyP2",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Bugün, 5.000'den fazla ailenin güvendiği, 1.200'den fazla profesyonel bakıcının yer aldığı Türkiye'nin en hızlı büyüyen bakım platformuyuz. Her geçen gün daha fazla aileye ulaşarak, bakım hizmetlerinde yeni standartlar belirliyoruz.",
+                  "lineHeight": 1.7,
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "3As5A",
+              "name": "storyImage",
+              "metadata": {
+                "type": "unsplash",
+                "username": "antovilardo",
+                "link": "https://unsplash.com/@antovilardo",
+                "author": "Antonella Vilardo"
+              },
+              "width": 480,
+              "height": 360,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1602409013704-008631bea714?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzExMTE4Mjd8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": "$radius-lg"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LQECo",
+          "name": "Values Section",
+          "width": "fill_container",
+          "fill": "$bg",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            72,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "vjSea",
+              "name": "valHeader",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yKAJw",
+                  "name": "vBadge",
+                  "fill": "$primary-soft",
+                  "cornerRadius": 20,
+                  "padding": [
+                    6,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "lcGlI",
+                      "name": "valBadgeT",
+                      "fill": "$primary",
+                      "content": "Değerlerimiz",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "duRBx",
+                  "name": "valTitle",
+                  "fill": "$text-primary",
+                  "content": "Bizi Farklı Kılan Değerler",
+                  "textAlign": "center",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 32,
+                  "fontWeight": "bold",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "Up8xv",
+                  "name": "valDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "Her adımımızda ailelerimizin güvenini ve bakıcılarımızın değerini ön planda tutuyoruz.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "4TFle",
+              "name": "valGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "GxquP",
+                  "name": "valCard1",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "2uB0X",
+                      "name": "iconWrap",
+                      "width": 52,
+                      "height": 52,
+                      "fill": "$primary-soft",
+                      "cornerRadius": "$radius-md",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "FmAUr",
+                          "name": "c1i",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "shield-check",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "GB2d6",
+                      "name": "c1t",
+                      "fill": "$text-primary",
+                      "content": "Güvenilirlik",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "LQ9yA",
+                      "name": "c1d",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Tüm bakıcılarımız detaylı referans kontrolü ve güvenlik taramasından geçirilir. Ailenizin güvenliği bizim en büyük önceliğimizdir.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "pNtDq",
+                  "name": "valCard2",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WZeTv",
+                      "name": "iconWrap2",
+                      "width": 52,
+                      "height": 52,
+                      "fill": "$primary-soft",
+                      "cornerRadius": "$radius-md",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "eaopI",
+                          "name": "c2i",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "award",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "Vdpb8",
+                      "name": "c2t",
+                      "fill": "$text-primary",
+                      "content": "Profesyonellik",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DzJZk",
+                      "name": "c2d",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Deneyimli ve eğitimli bakıcı kadromuz ile her zaman en yüksek kalitede hizmet sunuyoruz. Sürekli eğitim programlarımızla standartlarımızı yükseltiyoruz.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "vUWtJ",
+                  "name": "valCard3",
+                  "width": "fill_container",
+                  "fill": "$white",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "nzb2r",
+                      "name": "iconWrap3",
+                      "width": 52,
+                      "height": 52,
+                      "fill": "$primary-soft",
+                      "cornerRadius": "$radius-md",
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "IQvj7",
+                          "name": "c3i",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "eye",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "DahUf",
+                      "name": "c3t",
+                      "fill": "$text-primary",
+                      "content": "Şeffaflık",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 20,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yNsHN",
+                      "name": "c3d",
+                      "fill": "$text-secondary",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Fiyatlandırmadan hizmet süreçlerine kadar her aşamada tam şeffaflık sağlıyoruz. Sürpriz ücret veya gizli koşul yok.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QRoZG",
+          "name": "Stats Section",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 160,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#352EF2",
+                "position": 0
+              },
+              {
+                "color": "#1a1578",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            72,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "F4zU2",
+              "name": "statsTitle",
+              "fill": "$white",
+              "content": "Rakamlarla BakıcıKolay",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 32,
+              "fontWeight": "bold",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "frame",
+              "id": "0cO7S",
+              "name": "statsGrid",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "47QkO",
+                  "name": "stat1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF20"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "93YNw",
+                      "name": "s1num",
+                      "fill": "$white",
+                      "content": "5.000+",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 40,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cUQfT",
+                      "name": "s1label",
+                      "fill": "#FFFFFFBB",
+                      "content": "Mutlu Aile",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "J6OuF",
+                  "name": "stat2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF20"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LoF1V",
+                      "name": "s2num",
+                      "fill": "$white",
+                      "content": "1.200+",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 40,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "9GL87",
+                      "name": "s2label",
+                      "fill": "#FFFFFFBB",
+                      "content": "Profesyonel Bakıcı",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "nxZpQ",
+                  "name": "stat3",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF20"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "YVKuX",
+                      "name": "s3num",
+                      "fill": "$white",
+                      "content": "6",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 40,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "DahAD",
+                      "name": "s3label",
+                      "fill": "#FFFFFFBB",
+                      "content": "Yıllık Deneyim",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gIGrG",
+                  "name": "stat4",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": "$radius-lg",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF20"
+                  },
+                  "layout": "vertical",
+                  "gap": 8,
+                  "padding": 32,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "PE63R",
+                      "name": "s4num",
+                      "fill": "$white",
+                      "content": "%98",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 40,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZRgL8",
+                      "name": "s4label",
+                      "fill": "#FFFFFFBB",
+                      "content": "Memnuniyet Oranı",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QmZZT",
+          "name": "Team Section",
+          "width": "fill_container",
+          "fill": "$white",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            72,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "TDBL9",
+              "name": "teamHeader",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "b3rUi",
+                  "name": "tBadge",
+                  "fill": "$primary-soft",
+                  "cornerRadius": 20,
+                  "padding": [
+                    6,
+                    14
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wELY3",
+                      "name": "teamBadgeT",
+                      "fill": "$primary",
+                      "content": "Ekibimiz",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "LIIDu",
+                  "name": "teamTitle",
+                  "fill": "$text-primary",
+                  "content": "Sizi Dinleyen, Anlayan Ekip",
+                  "textAlign": "center",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 32,
+                  "fontWeight": "bold",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "PwV2f",
+                  "name": "teamDesc",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": 480,
+                  "content": "Deneyimli ve tutkulu ekibimiz, her gün daha iyi hizmet sunmak için çalışıyor.",
+                  "lineHeight": 1.5,
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Eue70",
+              "name": "teamGrid",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "QSaiX",
+                  "name": "member1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "oXxDR",
+                      "name": "avatar1",
+                      "width": 120,
+                      "height": 120,
+                      "fill": "$primary-soft",
+                      "cornerRadius": 60,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "0jmVL",
+                          "name": "t1icon",
+                          "width": 48,
+                          "height": 48,
+                          "iconFontName": "user",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ldaVq",
+                      "name": "t1name",
+                      "fill": "$text-primary",
+                      "content": "Ahmet Yılmaz",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "VhjA9",
+                      "name": "t1role",
+                      "fill": "$text-secondary",
+                      "content": "Kurucu & CEO",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "45xcj",
+                  "name": "member2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "htVID",
+                      "name": "avatar2",
+                      "width": 120,
+                      "height": 120,
+                      "fill": "$primary-soft",
+                      "cornerRadius": 60,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "qjKPx",
+                          "name": "t2icon",
+                          "width": 48,
+                          "height": 48,
+                          "iconFontName": "user",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "h0YYd",
+                      "name": "t2name",
+                      "fill": "$text-primary",
+                      "content": "Elif Demir",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "QrXaB",
+                      "name": "t2role",
+                      "fill": "$text-secondary",
+                      "content": "Operasyon Müdürü",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "htrJd",
+                  "name": "member3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "aDYro",
+                      "name": "avatar3",
+                      "width": 120,
+                      "height": 120,
+                      "fill": "$primary-soft",
+                      "cornerRadius": 60,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "GZiFe",
+                          "name": "t3icon",
+                          "width": 48,
+                          "height": 48,
+                          "iconFontName": "user",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "F7Ybn",
+                      "name": "t3name",
+                      "fill": "$text-primary",
+                      "content": "Mehmet Kaya",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 18,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RUXvt",
+                      "name": "t3role",
+                      "fill": "$text-secondary",
+                      "content": "Bakıcı İlişkileri Yöneticisi",
+                      "fontFamily": "$font-body",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Za895",
+          "name": "CTA Section",
+          "width": "fill_container",
+          "fill": "$bg",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            72,
+            200
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "YfArs",
+              "name": "ctaTitle",
+              "fill": "$text-primary",
+              "content": "Aileniz İçin En İyisini Birlikte Bulalım",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 28,
+              "fontWeight": "bold",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "jiTRv",
+              "name": "ctaDesc",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 500,
+              "content": "Hemen başvurun, ihtiyacınıza en uygun bakıcıyı en kısa sürede sizinle eşleştirelim.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "042HO",
+              "name": "ctaBtns",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "L4Fok",
+                  "name": "ctaBtn1",
+                  "fill": "$primary",
+                  "cornerRadius": "$radius-sm",
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "zddMU",
+                      "name": "ctaBtn1Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "arrow-right",
+                      "iconFontFamily": "lucide",
+                      "fill": "$white"
+                    },
+                    {
+                      "type": "text",
+                      "id": "RJauU",
+                      "name": "ctaBtn1Text",
+                      "fill": "$white",
+                      "content": "Başvuru Yap",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "svKj9",
+                  "name": "ctaBtn2",
+                  "fill": "$white",
+                  "cornerRadius": "$radius-sm",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "$border"
+                  },
+                  "gap": 8,
+                  "padding": [
+                    14,
+                    32
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "aZD7k",
+                      "name": "ctaBtn2Icon",
+                      "width": 18,
+                      "height": 18,
+                      "iconFontName": "phone",
+                      "iconFontFamily": "lucide",
+                      "fill": "$text-primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cpjuh",
+                      "name": "ctaBtn2Text",
+                      "fill": "$text-primary",
+                      "content": "Bizi Arayın",
+                      "fontFamily": "$font-body",
+                      "fontSize": 15,
+                      "fontWeight": "semibold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wzrWq",
+          "name": "Footer --layout",
+          "width": "fill_container",
+          "fill": "$black",
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "frame",
+              "id": "zF1YI",
+              "name": "fDiv1",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#222222"
+            },
+            {
+              "type": "frame",
+              "id": "vTIRv",
+              "name": "footerContent",
+              "width": "fill_container",
+              "gap": 60,
+              "padding": [
+                48,
+                80
+              ],
+              "justifyContent": "space_between",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "YXmuN",
+                  "name": "fBrand",
+                  "width": 300,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "bXRE1",
+                      "name": "fLogo",
+                      "gap": 8,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "wj8O0",
+                          "name": "fLogoBox",
+                          "width": 32,
+                          "height": 32,
+                          "fill": "$primary",
+                          "cornerRadius": 6,
+                          "justifyContent": "center",
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ONLAC",
+                              "name": "fLogoT",
+                              "fill": "$white",
+                              "content": "B",
+                              "fontFamily": "$font-heading",
+                              "fontSize": 16,
+                              "fontWeight": "bold"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "text",
+                          "id": "U4sil",
+                          "name": "fLogoName",
+                          "fill": "$white",
+                          "content": "BakıcıKolay",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 16,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "nf8Nu",
+                      "name": "fBrandDesc",
+                      "fill": "#999999",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Yaşlı ve çocuk bakımında Türkiye'nin güvenilir platformu.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TWHe4",
+                  "name": "fCol1",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "a6tBt",
+                      "name": "fCol1Title",
+                      "fill": "$white",
+                      "content": "Hizmetler",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YrPlp",
+                      "name": "fCol1L1",
+                      "fill": "#999999",
+                      "content": "Yaşlı Bakımı",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "vYkQy",
+                      "name": "fCol1L2",
+                      "fill": "#999999",
+                      "content": "Çocuk Bakımı",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "W36vw",
+                      "name": "fCol1L3",
+                      "fill": "#999999",
+                      "content": "Gece Bakımı",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "dK5Uo",
+                      "name": "fCol1L4",
+                      "fill": "#999999",
+                      "content": "Özel Bakım",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "NokQJ",
+                  "name": "fCol2",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9zbFR",
+                      "name": "fCol2Title",
+                      "fill": "$white",
+                      "content": "Kurumsal",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "f12Ni",
+                      "name": "fCol2L1",
+                      "fill": "#999999",
+                      "content": "Hakkımızda",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "YaUE4",
+                      "name": "fCol2L2",
+                      "fill": "#999999",
+                      "content": "İletişim",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uZKdT",
+                      "name": "fCol2L3",
+                      "fill": "#999999",
+                      "content": "Kariyer",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "ViWTs",
+                      "name": "fCol2L4",
+                      "fill": "#999999",
+                      "content": "Blog",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "esOss",
+                  "name": "fCol3",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mqVjo",
+                      "name": "fCol3Title",
+                      "fill": "$white",
+                      "content": "Yasal",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "PHYIa",
+                      "name": "fCol3L1",
+                      "fill": "#999999",
+                      "content": "Gizlilik Politikası",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "aSBYO",
+                      "name": "fCol3L2",
+                      "fill": "#999999",
+                      "content": "Kullanım Şartları",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "b0WpA",
+                      "name": "fCol3L3",
+                      "fill": "#999999",
+                      "content": "KVKK",
+                      "fontFamily": "$font-body",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TCfGO",
+              "name": "fDiv2",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#222222"
+            },
+            {
+              "type": "frame",
+              "id": "kfSLL",
+              "name": "fCopy",
+              "width": "fill_container",
+              "padding": [
+                24,
+                80
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "L0cGY",
+                  "name": "fCopyText",
+                  "fill": "#666666",
+                  "content": "© 2026 BakıcıKolay.com - Tüm hakları saklıdır.",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "HSfpB",
+                  "name": "fCopyRight",
+                  "fill": "#666666",
+                  "content": "Türkiye'nin Güvenilir Bakım Platformu",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "rgKOg",
+      "x": 1540,
+      "y": 0,
+      "name": "Hakkimizda - Mobile (iPhone 17 Pro)",
+      "clip": true,
+      "width": 393,
+      "fill": "$bg",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "L6PlB",
+          "name": "Mobile Header",
+          "width": "fill_container",
+          "height": 64,
+          "fill": "$white",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$border"
+          },
+          "padding": [
+            0,
+            20
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "llE5U",
+              "name": "mLogo",
+              "gap": 8,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "UaO9d",
+                  "name": "mLogoBox",
+                  "width": 32,
+                  "height": 32,
+                  "fill": "$primary",
+                  "cornerRadius": 6,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Ew75z",
+                      "name": "mLogoT",
+                      "fill": "$white",
+                      "content": "B",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 16,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "BLtNM",
+                  "name": "mLogoName",
+                  "fill": "$text-primary",
+                  "content": "BakıcıKolay",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                }
+              ]
+            },
+            {
+              "type": "icon_font",
+              "id": "NlTnW",
+              "name": "mMenu",
+              "width": 24,
+              "height": 24,
+              "iconFontName": "menu",
+              "iconFontFamily": "lucide",
+              "fill": "$text-primary"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "9yo00",
+          "name": "Mobile Hero",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 160,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#352EF2",
+                "position": 0
+              },
+              {
+                "color": "#1a1578",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 12,
+          "padding": [
+            36,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Bvv0x",
+              "name": "mBC",
+              "gap": 6,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "QN5eA",
+                  "name": "mBCHome",
+                  "fill": "#FFFFFFAA",
+                  "content": "Ana Sayfa",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "h0x3G",
+                  "name": "mBCSep",
+                  "fill": "#FFFFFF66",
+                  "content": "/",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                },
+                {
+                  "type": "text",
+                  "id": "YJqLr",
+                  "name": "mBCCur",
+                  "fill": "$white",
+                  "content": "Hakkımızda",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "7nkOX",
+              "name": "mHTitle",
+              "fill": "$white",
+              "content": "Hakkımızda",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 28,
+              "fontWeight": "bold",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "y4vax",
+              "name": "mHDesc",
+              "fill": "#FFFFFFBB",
+              "content": "2020'den bu yana ailelere güvenilir bakım hizmetleri sunuyoruz.",
+              "lineHeight": 1.5,
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vwo0z",
+          "name": "Mobile Story",
+          "width": "fill_container",
+          "fill": "$white",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            40,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "MYRjp",
+              "name": "mSBadge",
+              "fill": "$primary-soft",
+              "cornerRadius": 20,
+              "padding": [
+                6,
+                14
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "N7hFM",
+                  "name": "mSBadgeT",
+                  "fill": "$primary",
+                  "content": "Hikayemiz",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "kwf5C",
+              "name": "mSTitle",
+              "fill": "$text-primary",
+              "content": "Ailelere Güven,\nBakıcılara Değer",
+              "lineHeight": 1.2,
+              "fontFamily": "$font-heading",
+              "fontSize": 24,
+              "fontWeight": "bold",
+              "letterSpacing": -0.5
+            },
+            {
+              "type": "text",
+              "id": "h09YD",
+              "name": "mSP1",
+              "fill": "$text-secondary",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "BakıcıKolay, 2020 yılında İstanbul'da bir ailenin yaşadığı bakıcı bulma zorluğundan doğdu.",
+              "lineHeight": 1.7,
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "4wh3o",
+              "name": "mStoryImg",
+              "metadata": {
+                "type": "unsplash",
+                "username": "1m55sm",
+                "link": "https://unsplash.com/@1m55sm",
+                "author": "Mariia Chalaya"
+              },
+              "width": "fill_container",
+              "height": 200,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1525289792754-f023db9583fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzExMTE5NTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": "$radius-md"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "TBSJ3",
+          "name": "Mobile Values",
+          "width": "fill_container",
+          "fill": "$bg",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            20
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "Ce4rk",
+              "name": "mVTitle",
+              "fill": "$text-primary",
+              "content": "Değerlerimiz",
+              "fontFamily": "$font-heading",
+              "fontSize": 22,
+              "fontWeight": "bold",
+              "letterSpacing": -0.3
+            },
+            {
+              "type": "frame",
+              "id": "vTCZz",
+              "name": "mValCard1",
+              "width": "fill_container",
+              "fill": "$white",
+              "cornerRadius": "$radius-lg",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "5Dhl9",
+                  "name": "mVC1icon",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "$primary-soft",
+                  "cornerRadius": "$radius-md",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "i0WVE",
+                      "name": "mVC1i",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "shield-check",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "YaNuI",
+                  "name": "mVC1t",
+                  "fill": "$text-primary",
+                  "content": "Güvenilirlik",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "Z3ivh",
+                  "name": "mVC1d",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Tüm bakıcılarımız detaylı referans kontrolü ve güvenlik taramasından geçirilir.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gXR3F",
+              "name": "mValCard2",
+              "width": "fill_container",
+              "fill": "$white",
+              "cornerRadius": "$radius-lg",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "OrlbT",
+                  "name": "mVC2icon",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "$primary-soft",
+                  "cornerRadius": "$radius-md",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "SlgDX",
+                      "name": "mVC2i",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "award",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "7u92n",
+                  "name": "mVC2t",
+                  "fill": "$text-primary",
+                  "content": "Profesyonellik",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "Y80Qd",
+                  "name": "mVC2d",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Deneyimli ve eğitimli bakıcı kadromuzla en yüksek kalitede hizmet.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "kLhxt",
+              "name": "mValCard3",
+              "width": "fill_container",
+              "fill": "$white",
+              "cornerRadius": "$radius-lg",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border"
+              },
+              "layout": "vertical",
+              "gap": 12,
+              "padding": 20,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "4vPRz",
+                  "name": "mVC3icon",
+                  "width": 44,
+                  "height": 44,
+                  "fill": "$primary-soft",
+                  "cornerRadius": "$radius-md",
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "CG3KN",
+                      "name": "mVC3i",
+                      "width": 20,
+                      "height": 20,
+                      "iconFontName": "eye",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "363pa",
+                  "name": "mVC3t",
+                  "fill": "$text-primary",
+                  "content": "Şeffaflık",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "AHOQj",
+                  "name": "mVC3d",
+                  "fill": "$text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Fiyatlandırmadan hizmet süreçlerine kadar tam şeffaflık.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "EN6BD",
+          "name": "Mobile Stats",
+          "width": "fill_container",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 160,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#352EF2",
+                "position": 0
+              },
+              {
+                "color": "#1a1578",
+                "position": 1
+              }
+            ]
+          },
+          "layout": "vertical",
+          "gap": 14,
+          "padding": [
+            40,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "4rMlC",
+              "name": "mStatsTitle",
+              "fill": "$white",
+              "content": "Rakamlarla Biz",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 22,
+              "fontWeight": "bold",
+              "letterSpacing": -0.3
+            },
+            {
+              "type": "frame",
+              "id": "cEJ5n",
+              "name": "mStatsRow1",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "6HMm5",
+                  "name": "mS1",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": "$radius-md",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF20"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AXkSj",
+                      "name": "mS1n",
+                      "fill": "$white",
+                      "content": "5.000+",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "o1cDT",
+                      "name": "mS1l",
+                      "fill": "#FFFFFFBB",
+                      "content": "Mutlu Aile",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "86SqC",
+                  "name": "mS2",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": "$radius-md",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF20"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ThRVR",
+                      "name": "mS2n",
+                      "fill": "$white",
+                      "content": "1.200+",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "1kXC7",
+                      "name": "mS2l",
+                      "fill": "#FFFFFFBB",
+                      "content": "Bakıcı",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "qM1h2",
+              "name": "mStatsRow2",
+              "width": "fill_container",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LlCQc",
+                  "name": "mS3",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": "$radius-md",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF20"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5W4Dn",
+                      "name": "mS3n",
+                      "fill": "$white",
+                      "content": "6 Yıl",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "UDEeY",
+                      "name": "mS3l",
+                      "fill": "#FFFFFFBB",
+                      "content": "Deneyim",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "s3iX5",
+                  "name": "mS4",
+                  "width": "fill_container",
+                  "fill": "#FFFFFF15",
+                  "cornerRadius": "$radius-md",
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1,
+                    "fill": "#FFFFFF20"
+                  },
+                  "layout": "vertical",
+                  "gap": 4,
+                  "padding": 20,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uL8qt",
+                      "name": "mS4n",
+                      "fill": "$white",
+                      "content": "%98",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 24,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "nzHW3",
+                      "name": "mS4l",
+                      "fill": "#FFFFFFBB",
+                      "content": "Memnuniyet",
+                      "fontFamily": "$font-body",
+                      "fontSize": 12,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6T7TI",
+          "name": "Mobile Team",
+          "width": "fill_container",
+          "fill": "$white",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            40,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "BnOEp",
+              "name": "mTeamTitle",
+              "fill": "$text-primary",
+              "content": "Ekibimiz",
+              "fontFamily": "$font-heading",
+              "fontSize": 22,
+              "fontWeight": "bold",
+              "letterSpacing": -0.3
+            },
+            {
+              "type": "frame",
+              "id": "BEXlQ",
+              "name": "mT1",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "jn9Wq",
+                  "name": "mT1img",
+                  "width": 80,
+                  "height": 80,
+                  "fill": "$primary-soft",
+                  "cornerRadius": 40,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "Mr1VD",
+                      "name": "mT1i",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "FS74v",
+                  "name": "mT1n",
+                  "fill": "$text-primary",
+                  "content": "Ahmet Yılmaz",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "gWiEZ",
+                  "name": "mT1r",
+                  "fill": "$text-secondary",
+                  "content": "Kurucu & CEO",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ClHvR",
+              "name": "mT2",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "lG6XJ",
+                  "name": "mT2img",
+                  "width": 80,
+                  "height": 80,
+                  "fill": "$primary-soft",
+                  "cornerRadius": 40,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "cjhyd",
+                      "name": "mT2i",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "4zvH6",
+                  "name": "mT2n",
+                  "fill": "$text-primary",
+                  "content": "Elif Demir",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "X38ID",
+                  "name": "mT2r",
+                  "fill": "$text-secondary",
+                  "content": "Operasyon Müdürü",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UQ82k",
+              "name": "mT3",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "CEC54",
+                  "name": "mT3img",
+                  "width": 80,
+                  "height": 80,
+                  "fill": "$primary-soft",
+                  "cornerRadius": 40,
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "skPrQ",
+                      "name": "mT3i",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "user",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "9NIGw",
+                  "name": "mT3n",
+                  "fill": "$text-primary",
+                  "content": "Mehmet Kaya",
+                  "fontFamily": "$font-heading",
+                  "fontSize": 16,
+                  "fontWeight": "bold"
+                },
+                {
+                  "type": "text",
+                  "id": "UaRXj",
+                  "name": "mT3r",
+                  "fill": "$text-secondary",
+                  "content": "Bakıcı İlişkileri Yöneticisi",
+                  "fontFamily": "$font-body",
+                  "fontSize": 13,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pIiVd",
+          "name": "Mobile CTA",
+          "width": "fill_container",
+          "fill": "$bg",
+          "layout": "vertical",
+          "gap": 20,
+          "padding": [
+            40,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "yjWHo",
+              "name": "mCtaTitle",
+              "fill": "$text-primary",
+              "content": "Hemen Başvurun",
+              "textAlign": "center",
+              "fontFamily": "$font-heading",
+              "fontSize": 22,
+              "fontWeight": "bold",
+              "letterSpacing": -0.3
+            },
+            {
+              "type": "text",
+              "id": "ql4eP",
+              "name": "mCtaDesc",
+              "fill": "$text-secondary",
+              "content": "Size uygun bakıcıyı en kısa sürede eşleştirelim.",
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 14,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "oaIaV",
+              "name": "mCtaBtn",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "$primary",
+              "cornerRadius": "$radius-sm",
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "khMIT",
+                  "name": "mCtaBtnI",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "arrow-right",
+                  "iconFontFamily": "lucide",
+                  "fill": "$white"
+                },
+                {
+                  "type": "text",
+                  "id": "RtpBM",
+                  "name": "mCtaBtnT",
+                  "fill": "$white",
+                  "content": "Başvuru Yap",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "semibold"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "UITNt",
+              "name": "mCtaBtn2",
+              "width": "fill_container",
+              "height": 48,
+              "fill": "$white",
+              "cornerRadius": "$radius-sm",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$border"
+              },
+              "gap": 8,
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "0umO6",
+                  "name": "mCtaBtn2I",
+                  "width": 18,
+                  "height": 18,
+                  "iconFontName": "phone",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-primary"
+                },
+                {
+                  "type": "text",
+                  "id": "9VYhx",
+                  "name": "mCtaBtn2T",
+                  "fill": "$text-primary",
+                  "content": "Bizi Arayın",
+                  "fontFamily": "$font-body",
+                  "fontSize": 15,
+                  "fontWeight": "semibold"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SHRJ3",
+          "name": "Mobile Footer",
+          "width": "fill_container",
+          "fill": "$black",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            40,
+            20
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "yPRdV",
+              "name": "mFBrand",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "j4ZZi",
+                  "name": "mFLogo",
+                  "gap": 8,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "G1lit",
+                      "name": "mFLogoBox",
+                      "width": 28,
+                      "height": 28,
+                      "fill": "$primary",
+                      "cornerRadius": 6,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "HLAPz",
+                          "name": "mFLogoT",
+                          "fill": "$white",
+                          "content": "B",
+                          "fontFamily": "$font-heading",
+                          "fontSize": 14,
+                          "fontWeight": "bold"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "0qeJC",
+                      "name": "mFLogoN",
+                      "fill": "$white",
+                      "content": "BakıcıKolay",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 14,
+                      "fontWeight": "bold"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "xgv26",
+                  "name": "mFDesc",
+                  "fill": "#999999",
+                  "content": "Yaşlı ve çocuk bakımında güvenilir platform.",
+                  "textAlign": "center",
+                  "fontFamily": "$font-body",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IzGte",
+              "name": "mFDiv1",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#222222"
+            },
+            {
+              "type": "frame",
+              "id": "VKKwz",
+              "name": "mFLinks",
+              "width": "fill_container",
+              "gap": 32,
+              "justifyContent": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "MB0v5",
+                  "name": "mFL1",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "kfBEw",
+                      "name": "mFL1T",
+                      "fill": "$white",
+                      "content": "Hizmetler",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "4Om6x",
+                      "name": "mFL1L1",
+                      "fill": "#999999",
+                      "content": "Yaşlı Bakımı",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "cXk3Y",
+                      "name": "mFL1L2",
+                      "fill": "#999999",
+                      "content": "Çocuk Bakımı",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "kxZFS",
+                  "name": "mFL2",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ztGt4",
+                      "name": "mFL2T",
+                      "fill": "$white",
+                      "content": "Kurumsal",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "y3H5W",
+                      "name": "mFL2L1",
+                      "fill": "#999999",
+                      "content": "Hakkımızda",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SXWxP",
+                      "name": "mFL2L2",
+                      "fill": "#999999",
+                      "content": "İletişim",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yZsrk",
+                  "name": "mFL3",
+                  "layout": "vertical",
+                  "gap": 10,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "35znz",
+                      "name": "mFL3T",
+                      "fill": "$white",
+                      "content": "Yasal",
+                      "fontFamily": "$font-heading",
+                      "fontSize": 12,
+                      "fontWeight": "bold"
+                    },
+                    {
+                      "type": "text",
+                      "id": "7tEy5",
+                      "name": "mFL3L1",
+                      "fill": "#999999",
+                      "content": "Gizlilik",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "pWUWF",
+                      "name": "mFL3L2",
+                      "fill": "#999999",
+                      "content": "KVKK",
+                      "fontFamily": "$font-body",
+                      "fontSize": 11,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "CyabO",
+              "name": "mFDiv2",
+              "width": "fill_container",
+              "height": 1,
+              "fill": "#222222"
+            },
+            {
+              "type": "text",
+              "id": "ViVFO",
+              "name": "mCopy",
+              "fill": "#666666",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "© 2026 BakıcıKolay.com",
+              "textAlign": "center",
+              "fontFamily": "$font-body",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "accent-gold": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F5A623"
+        },
+        {
+          "value": "#F5A623"
+        }
+      ]
+    },
+    "bg": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FAFAFA"
+        },
+        {
+          "value": "#FAFAFA"
+        }
+      ]
+    },
+    "bg-warm": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#F5F5F7"
+        },
+        {
+          "value": "#F5F5F7"
+        }
+      ]
+    },
+    "black": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111"
+        },
+        {
+          "value": "#111111"
+        }
+      ]
+    },
+    "border": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#E5E5E5"
+        },
+        {
+          "value": "#E5E5E5"
+        }
+      ]
+    },
+    "border-strong": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#CCCCCC"
+        },
+        {
+          "value": "#CCCCCC"
+        }
+      ]
+    },
+    "font-body": {
+      "type": "string",
+      "value": [
+        {
+          "value": "DM Sans"
+        },
+        {
+          "value": "DM Sans"
+        }
+      ]
+    },
+    "font-heading": {
+      "type": "string",
+      "value": [
+        {
+          "value": "DM Sans"
+        },
+        {
+          "value": "DM Sans"
+        }
+      ]
+    },
+    "negative": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EF4444"
+        },
+        {
+          "value": "#EF4444"
+        }
+      ]
+    },
+    "positive": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#22C55E"
+        },
+        {
+          "value": "#22C55E"
+        }
+      ]
+    },
+    "primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#352EF2"
+        },
+        {
+          "value": "#352EF2"
+        }
+      ]
+    },
+    "primary-dark": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#2A24C2"
+        },
+        {
+          "value": "#2A24C2"
+        }
+      ]
+    },
+    "primary-light": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#6B66F5"
+        },
+        {
+          "value": "#6B66F5"
+        }
+      ]
+    },
+    "primary-soft": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#EEEDFE"
+        },
+        {
+          "value": "#EEEDFE"
+        }
+      ]
+    },
+    "radius-lg": {
+      "type": "number",
+      "value": [
+        {
+          "value": 16
+        },
+        {
+          "value": 16
+        }
+      ]
+    },
+    "radius-md": {
+      "type": "number",
+      "value": [
+        {
+          "value": 12
+        },
+        {
+          "value": 12
+        }
+      ]
+    },
+    "radius-sm": {
+      "type": "number",
+      "value": [
+        {
+          "value": 8
+        },
+        {
+          "value": 8
+        }
+      ]
+    },
+    "radius-xl": {
+      "type": "number",
+      "value": [
+        {
+          "value": 24
+        },
+        {
+          "value": 24
+        }
+      ]
+    },
+    "surface": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    "text-muted": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#999999"
+        },
+        {
+          "value": "#999999"
+        }
+      ]
+    },
+    "text-on-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#FFFFFF"
+        }
+      ]
+    },
+    "text-primary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#111111"
+        },
+        {
+          "value": "#111111"
+        }
+      ]
+    },
+    "text-secondary": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#555555"
+        },
+        {
+          "value": "#555555"
+        }
+      ]
+    },
+    "white": {
+      "type": "color",
+      "value": [
+        {
+          "value": "#FFFFFF"
+        },
+        {
+          "value": "#FFFFFF"
+        }
+      ]
+    }
+  }
+}

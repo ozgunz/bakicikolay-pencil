@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom';
+import { User } from 'lucide-react';
+import { Logo } from '../Logo';
 
 export function Header({ activePage = 'anasayfa' }) {
   const navItems = [
@@ -9,19 +11,14 @@ export function Header({ activePage = 'anasayfa' }) {
   ];
 
   return (
-    <header className="flex items-center justify-between h-20 px-5 md:px-20 bg-[var(--color-white)] border-b border-[var(--color-border)] w-full">
+    <header className="flex items-center h-20 px-5 md:px-20 bg-[var(--color-white)] border-b border-[var(--color-border)] w-full">
       {/* Logo */}
-      <Link to="/" className="flex items-center gap-2.5 h-11">
-        <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-[var(--color-primary)]">
-          <span className="font-heading text-lg font-bold text-white">B</span>
-        </div>
-        <span className="font-heading text-[22px] font-bold tracking-tight text-[var(--color-text-primary)]">
-          BakıcıKolay
-        </span>
+      <Link to="/" className="flex items-center h-11 shrink-0">
+        <Logo className="h-10 w-auto" />
       </Link>
 
-      {/* Navigation - Desktop */}
-      <nav className="hidden md:flex items-center gap-8">
+      {/* Navigation - Desktop (centered) */}
+      <nav className="hidden md:flex flex-1 items-center justify-center gap-8">
         {navItems.map((item) => (
           <Link
             key={item.key}
@@ -35,16 +32,27 @@ export function Header({ activePage = 'anasayfa' }) {
             {item.label}
           </Link>
         ))}
+      </nav>
+
+      {/* Action Buttons - Desktop */}
+      <div className="hidden md:flex items-center gap-3 shrink-0">
         <Link
           to="/hizmet-detay"
-          className="flex items-center gap-2 px-7 py-3 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[var(--color-primary-dark)] transition-colors"
+          className="flex h-[42px] items-center justify-center gap-2 px-6 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[var(--color-primary-dark)] transition-colors"
         >
           Başvuru Yap
         </Link>
-      </nav>
+        <Link
+          to="/giris"
+          className="flex h-[42px] items-center justify-center gap-2 px-6 rounded-[var(--radius-sm)] bg-[var(--color-black)] font-body text-sm font-semibold text-white transition-opacity hover:opacity-80"
+        >
+          <User className="h-4 w-4" />
+          Giriş Yap
+        </Link>
+      </div>
 
       {/* Mobile Menu Button */}
-      <button className="md:hidden flex items-center justify-center w-10 h-10" aria-label="Menü">
+      <button className="md:hidden ml-auto flex items-center justify-center w-10 h-10" aria-label="Menü">
         <svg className="w-6 h-6 text-[var(--color-text-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>

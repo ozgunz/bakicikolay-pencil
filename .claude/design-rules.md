@@ -6,6 +6,7 @@
 - Aşağıda Pages {Sayfa İsmi}: olarak sayfalar sana listelendi, bu sayfaların .pen dosyasında Frame alanı yoksa oluştur ve tasarla. Tasarım tailwind'e uygun olmalı. Grid hizalamaları ve SEO tasarım semantiğine uygun olmalı.!important
 - Her sayfanın bir de iPhone 17 Pro boyutlarına göre mobile tasarımını yap. Eğer frame varsa düzenlemeleri o alanda güncellemeyi unutma.
 - shadcn ui kullan.
+- Logo: /designs/logo.svg
 
 
 
