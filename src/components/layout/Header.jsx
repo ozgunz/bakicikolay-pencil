@@ -1,13 +1,17 @@
 import { Link } from 'react-router-dom';
 import { User } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import { Logo } from '../Logo';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export function Header({ activePage = 'anasayfa' }) {
+  const { t } = useTranslation();
+
   const navItems = [
-    { key: 'anasayfa', label: 'Ana Sayfa', href: '/' },
-    { key: 'hizmetler', label: 'Hizmetler', href: '/hizmetler' },
-    { key: 'hakkimizda', label: 'Hakkımızda', href: '/hakkimizda' },
-    { key: 'iletisim', label: 'İletişim', href: '/iletisim' },
+    { key: 'anasayfa', label: t('nav.home'), href: '/' },
+    { key: 'hizmetler', label: t('nav.services'), href: '/hizmetler' },
+    { key: 'hakkimizda', label: t('nav.about'), href: '/hakkimizda' },
+    { key: 'iletisim', label: t('nav.contact'), href: '/iletisim' },
   ];
 
   return (
@@ -36,23 +40,24 @@ export function Header({ activePage = 'anasayfa' }) {
 
       {/* Action Buttons - Desktop */}
       <div className="hidden md:flex items-center gap-3 shrink-0">
+        <LanguageSwitcher />
         <Link
           to="/hizmet-detay"
           className="flex h-[42px] items-center justify-center gap-2 px-6 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[var(--color-primary-dark)] transition-colors"
         >
-          Başvuru Yap
+          {t('nav.requestCare')}
         </Link>
         <Link
           to="/giris"
           className="flex h-[42px] items-center justify-center gap-2 px-6 rounded-[var(--radius-sm)] bg-[var(--color-black)] font-body text-sm font-semibold text-white transition-opacity hover:opacity-80"
         >
           <User className="h-4 w-4" />
-          Giriş Yap
+          {t('nav.login')}
         </Link>
       </div>
 
       {/* Mobile Menu Button */}
-      <button className="md:hidden ml-auto flex items-center justify-center w-10 h-10" aria-label="Menü">
+      <button className="md:hidden ml-auto flex items-center justify-center w-10 h-10" aria-label="Menu">
         <svg className="w-6 h-6 text-[var(--color-text-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>

@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/layout/Layout';
 import {
   Send,
@@ -21,34 +22,6 @@ import {
 /* ------------------------------------------------------------------ */
 /*  Static Data                                                        */
 /* ------------------------------------------------------------------ */
-
-const faqItems = [
-  {
-    question: 'BakıcıKolay nasıl çalışır?',
-    answer:
-      'BakıcıKolay, ihtiyacınıza uygun bakıcıları sizinle buluşturan bir platformdur. Başvurunuzu yaptıktan sonra, uzman ekibimiz sizin için en uygun bakıcı adaylarını belirler ve sizinle paylaşır. Mülakat sürecinde yanınızda olur, hizmet başladıktan sonra da düzenli takip yaparız.',
-  },
-  {
-    question: 'Bakıcılar nasıl seçiliyor?',
-    answer:
-      'Tüm bakıcı adaylarımız kapsamlı bir değerlendirme sürecinden geçer. Adli sicil kaydı, referans kontrolü, sağlık raporu ve mesleki yetkinlik değerlendirmesi yapılır. Sadece bu aşamaların tümünü başarıyla tamamlayan adaylar platformumuza kabul edilir.',
-  },
-  {
-    question: 'Ücretlendirme nasıl yapılıyor?',
-    answer:
-      'Ücretlendirme hizmet türüne, süresine ve bakıcının deneyimine göre belirlenir. Şeffaf fiyatlandırma politikamız sayesinde tüm ücretleri önceden görürsünüz. Ek veya gizli ücret yoktur.',
-  },
-  {
-    question: 'Hizmetleriniz hangi şehirlerde geçerli?',
-    answer:
-      'Şu anda İstanbul, Ankara, İzmir, Bursa ve Antalya başta olmak üzere Türkiye\'nin 20\'den fazla büyük şehrinde hizmet vermekteyiz. Kapsama alanımızı sürekli genişletiyoruz.',
-  },
-  {
-    question: 'Bakıcımdan memnun kalmazsam ne olur?',
-    answer:
-      'Memnuniyet garantimiz kapsamında, bakıcınızdan memnun kalmazsanız 7 gün içinde ücretsiz bakıcı değişikliği yapıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir.',
-  },
-];
 
 const testimonials = [
   {
@@ -109,38 +82,13 @@ const testimonials = [
   },
 ];
 
-const blogPosts = [
-  {
-    tag: 'Sağlık',
-    tagColor: 'bg-[var(--color-primary)]',
-    title: 'Yaşlı Bakımında Dikkat Edilmesi Gereken 10 Önemli Nokta',
-    date: '15 Ocak 2026',
-  },
-  {
-    tag: 'Rehber',
-    tagColor: 'bg-[var(--color-positive)]',
-    title: 'Doğru Bakıcıyı Seçmek İçin 5 Altın Kural',
-    date: '12 Ocak 2026',
-  },
-  {
-    tag: 'Beslenme',
-    tagColor: 'bg-[var(--color-accent-gold)]',
-    title: 'Çocuklarda Sağlıklı Beslenme Alışkanlıkları',
-    date: '8 Ocak 2026',
-  },
-  {
-    tag: 'Kariyer',
-    tagColor: 'bg-red-500',
-    title: 'Profesyonel Bakıcı Olmak: Kariyer Rehberi',
-    date: '5 Ocak 2026',
-  },
-];
-
 /* ------------------------------------------------------------------ */
 /*  Sub-components                                                     */
 /* ------------------------------------------------------------------ */
 
 function HeroSection() {
+  const { t } = useTranslation();
+
   return (
     <section
       className="w-full px-5 py-12 md:px-20 md:py-20"
@@ -153,41 +101,39 @@ function HeroSection() {
           <span className="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2">
             <span className="h-2 w-2 rounded-full bg-[var(--color-positive)]" />
             <span className="font-body text-sm text-white/80">
-              Türkiye&apos;nin 1 Numaralı Bakım Platformu
+              {t('home.hero.badge')}
             </span>
           </span>
 
           {/* Title */}
           <h1 className="font-heading text-[36px] font-bold leading-[1.1] tracking-[-1.5px] text-white md:text-[56px]">
-            Aileniz İçin
+            {t('home.hero.title1')}
             <br />
-            Güvenilir Bakım
+            {t('home.hero.title2')}
             <br />
-            Hizmeti
+            {t('home.hero.title3')}
           </h1>
 
           {/* Description */}
           <p className="max-w-[480px] font-body text-base leading-relaxed text-white/75 md:text-lg">
-            Profesyonel ve güvenilir bakıcılarla ailenizin ihtiyaçlarına uygun
-            bakım hizmeti. Yaşlı bakımı, çocuk bakımı ve özel bakım
-            çözümlerimizle yanınızdayız.
+            {t('home.hero.description')}
           </p>
 
           {/* Stats */}
           <div className="flex flex-wrap items-center justify-center gap-6 md:justify-start">
             <div className="flex flex-col items-center md:items-start">
               <span className="font-heading text-[28px] font-bold text-white">5,000+</span>
-              <span className="font-body text-sm text-white/60">Mutlu Aile</span>
+              <span className="font-body text-sm text-white/60">{t('home.hero.statFamilies')}</span>
             </div>
             <div className="hidden h-10 w-px bg-white/30 md:block" />
             <div className="flex flex-col items-center md:items-start">
               <span className="font-heading text-[28px] font-bold text-white">1,200+</span>
-              <span className="font-body text-sm text-white/60">Profesyonel Bakıcı</span>
+              <span className="font-body text-sm text-white/60">{t('home.hero.statCaregivers')}</span>
             </div>
             <div className="hidden h-10 w-px bg-white/30 md:block" />
             <div className="flex flex-col items-center md:items-start">
               <span className="font-heading text-[28px] font-bold text-white">4.9/5</span>
-              <span className="font-body text-sm text-white/60">Memnuniyet</span>
+              <span className="font-body text-sm text-white/60">{t('home.hero.statSatisfaction')}</span>
             </div>
           </div>
         </div>
@@ -196,10 +142,10 @@ function HeroSection() {
         <div className="flex w-full flex-col gap-6 rounded-[var(--radius-lg)] bg-[var(--color-white)] p-7 shadow-lg md:w-[440px] md:p-9">
           <div className="flex flex-col gap-1">
             <h2 className="font-heading text-2xl font-bold text-[var(--color-text-primary)]">
-              Bakım Hizmeti Talep Et
+              {t('home.form.title')}
             </h2>
             <p className="font-body text-sm text-[var(--color-text-secondary)]">
-              Formu doldurun, size en uygun bakıcıyı bulalım.
+              {t('home.form.subtitle')}
             </p>
           </div>
 
@@ -207,21 +153,21 @@ function HeroSection() {
             <div className="flex flex-col gap-4 md:flex-row md:gap-3">
               <label className="flex min-w-0 flex-1 flex-col gap-1.5">
                 <span className="font-body text-[13px] font-medium text-[var(--color-text-primary)]">
-                  Ad Soyad
+                  {t('home.form.fullName')}
                 </span>
                 <input
                   type="text"
-                  placeholder="Adınız Soyadınız"
+                  placeholder={t('home.form.fullNamePlaceholder')}
                   className="h-[46px] w-full rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3.5 font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]"
                 />
               </label>
               <label className="flex min-w-0 flex-1 flex-col gap-1.5">
                 <span className="font-body text-[13px] font-medium text-[var(--color-text-primary)]">
-                  Telefon
+                  {t('home.form.phone')}
                 </span>
                 <input
                   type="tel"
-                  placeholder="0 (5XX) XXX XX XX"
+                  placeholder={t('home.form.phonePlaceholder')}
                   className="h-[46px] w-full rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3.5 font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]"
                 />
               </label>
@@ -229,20 +175,20 @@ function HeroSection() {
 
             <label className="flex flex-col gap-1.5">
               <span className="font-body text-[13px] font-medium text-[var(--color-text-primary)]">
-                Hizmet Türü
+                {t('home.form.serviceType')}
               </span>
               <select className="h-[46px] rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3.5 font-body text-sm text-[var(--color-text-primary)] focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]">
-                <option value="">Hizmet türü seçiniz</option>
-                <option value="yasli">Yaşlı Bakımı</option>
-                <option value="cocuk">Çocuk Bakımı</option>
-                <option value="gece">Gece Bakımı</option>
-                <option value="ozel">Özel Bakım</option>
+                <option value="">{t('home.form.serviceTypePlaceholder')}</option>
+                <option value="yasli">{t('home.form.serviceElderly')}</option>
+                <option value="cocuk">{t('home.form.serviceChild')}</option>
+                <option value="gece">{t('home.form.serviceNight')}</option>
+                <option value="ozel">{t('home.form.serviceSpecial')}</option>
               </select>
             </label>
 
             <label className="flex flex-col gap-1.5">
               <span className="font-body text-[13px] font-medium text-[var(--color-text-primary)]">
-                Tercih Edilen Tarih
+                {t('home.form.preferredDate')}
               </span>
               <input
                 type="date"
@@ -252,10 +198,10 @@ function HeroSection() {
 
             <label className="flex flex-col gap-1.5">
               <span className="font-body text-[13px] font-medium text-[var(--color-text-primary)]">
-                Not
+                {t('home.form.note')}
               </span>
               <textarea
-                placeholder="Eklemek istediğiniz notlar..."
+                placeholder={t('home.form.notePlaceholder')}
                 className="h-20 resize-none rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-bg)] px-3.5 py-3 font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] focus:border-[var(--color-primary)] focus:outline-none focus:ring-1 focus:ring-[var(--color-primary)]"
               />
             </label>
@@ -264,7 +210,7 @@ function HeroSection() {
               type="submit"
               className="flex h-[50px] w-full items-center justify-center gap-2 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] transition-colors hover:bg-[var(--color-primary-dark)]"
             >
-              Ücretsiz Başvuru Yap
+              {t('home.form.submit')}
               <Send className="h-4 w-4" />
             </button>
           </form>
@@ -272,7 +218,7 @@ function HeroSection() {
           <div className="flex items-center gap-2">
             <ShieldCheck className="h-4 w-4 shrink-0 text-[var(--color-positive)]" />
             <span className="font-body text-xs text-[var(--color-text-muted)]">
-              Bilgileriniz gizli tutulur ve 3. kişilerle paylaşılmaz.
+              {t('home.form.privacy')}
             </span>
           </div>
         </div>
@@ -282,20 +228,29 @@ function HeroSection() {
 }
 
 function FaqSection() {
+  const { t } = useTranslation();
   const [openIndex, setOpenIndex] = useState(0);
+
+  const faqItems = [
+    { question: t('home.faq.q1'), answer: t('home.faq.a1') },
+    { question: t('home.faq.q2'), answer: t('home.faq.a2') },
+    { question: t('home.faq.q3'), answer: t('home.faq.a3') },
+    { question: t('home.faq.q4'), answer: t('home.faq.a4') },
+    { question: t('home.faq.q5'), answer: t('home.faq.a5') },
+  ];
 
   return (
     <section className="w-full bg-[var(--color-white)] px-5 py-12 md:px-[200px] md:py-20">
       <div className="mx-auto flex max-w-[900px] flex-col items-center gap-12">
         <div className="flex flex-col items-center gap-4 text-center">
           <span className="inline-flex items-center rounded-full bg-[var(--color-primary-soft)] px-4 py-1.5 font-body text-sm font-semibold text-[var(--color-primary)]">
-            SSS
+            {t('home.faq.badge')}
           </span>
           <h2 className="font-heading text-3xl font-bold text-[var(--color-text-primary)] md:text-4xl">
-            Sıkça Sorulan Sorular
+            {t('home.faq.title')}
           </h2>
           <p className="max-w-[560px] font-body text-base leading-relaxed text-[var(--color-text-secondary)]">
-            Merak ettiğiniz soruların cevaplarını burada bulabilirsiniz.
+            {t('home.faq.subtitle')}
           </p>
         </div>
 
@@ -349,6 +304,7 @@ function FaqSection() {
 }
 
 function TestimonialsSection() {
+  const { t } = useTranslation();
   const scrollRef = useRef(null);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
@@ -375,18 +331,17 @@ function TestimonialsSection() {
       <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-12">
         <div className="flex flex-col items-center gap-4 text-center">
           <span className="inline-flex items-center rounded-full bg-white/20 px-4 py-1.5 font-body text-sm font-semibold text-white">
-            Müşteri Yorumları
+            {t('home.testimonials.badge')}
           </span>
           <h2 className="font-heading text-3xl font-bold text-white md:text-4xl">
-            Binlerce Ailenin Güvenini Kazandık
+            {t('home.testimonials.title')}
           </h2>
           <p className="max-w-[560px] font-body text-base leading-relaxed text-white/75">
-            Müşterilerimizin deneyimlerini ve memnuniyetlerini dinleyin.
+            {t('home.testimonials.subtitle')}
           </p>
         </div>
 
         <div className="relative w-full">
-          {/* Left arrow */}
           {canScrollLeft && (
             <button
               type="button"
@@ -397,21 +352,20 @@ function TestimonialsSection() {
             </button>
           )}
 
-          {/* Carousel track */}
           <div
             ref={scrollRef}
             onScroll={checkScroll}
             className="flex gap-5 overflow-x-auto scroll-smooth pb-2 [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
           >
-            {testimonials.map((t, index) => (
+            {testimonials.map((item, index) => (
               <article
                 key={index}
                 className="flex w-[280px] shrink-0 flex-col gap-4 rounded-[var(--radius-lg)] border border-[#E5E7EB] bg-white p-7 md:w-[360px] md:gap-5 md:p-8"
               >
                 <div className="flex gap-1">
                   {Array.from({ length: 5 }).map((_, i) => {
-                    const fullStars = Math.floor(t.rating);
-                    const hasHalf = t.rating % 1 !== 0;
+                    const fullStars = Math.floor(item.rating);
+                    const hasHalf = item.rating % 1 !== 0;
                     if (i < fullStars) {
                       return (
                         <Star
@@ -437,24 +391,23 @@ function TestimonialsSection() {
                   })}
                 </div>
                 <p className="flex-1 font-body text-[13px] leading-relaxed text-[#374151] md:text-[15px]">
-                  &ldquo;{t.quote}&rdquo;
+                  &ldquo;{item.quote}&rdquo;
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="flex h-[30px] w-[30px] items-center justify-center rounded-full bg-[var(--color-primary)] md:h-10 md:w-10">
                     <span className="font-heading text-xs font-bold text-white md:text-sm">
-                      {t.name.charAt(0)}
+                      {item.name.charAt(0)}
                     </span>
                   </div>
                   <div className="flex flex-col">
-                    <span className="font-body text-xs font-semibold text-[#1F2937] md:text-sm">{t.name}</span>
-                    <span className="font-body text-[10px] text-[#9CA3AF] md:text-xs">{t.role}</span>
+                    <span className="font-body text-xs font-semibold text-[#1F2937] md:text-sm">{item.name}</span>
+                    <span className="font-body text-[10px] text-[#9CA3AF] md:text-xs">{item.role}</span>
                   </div>
                 </div>
               </article>
             ))}
           </div>
 
-          {/* Right arrow */}
           {canScrollRight && (
             <button
               type="button"
@@ -471,19 +424,20 @@ function TestimonialsSection() {
 }
 
 function SocialMediaSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="w-full bg-[var(--color-bg-warm)] px-5 py-12 md:px-20 md:py-20">
       <div className="mx-auto flex max-w-[1400px] flex-col items-center gap-10 md:flex-row md:gap-[60px]">
         <div className="flex flex-1 flex-col items-center gap-6 text-center md:items-start md:text-left">
           <span className="inline-flex items-center rounded-full bg-[var(--color-primary-soft)] px-4 py-1.5 font-body text-sm font-semibold text-[var(--color-primary)]">
-            Sosyal Medya
+            {t('home.social.badge')}
           </span>
           <h2 className="font-heading text-3xl font-bold text-[var(--color-text-primary)] md:text-4xl">
-            Bizi Takip Edin
+            {t('home.social.title')}
           </h2>
           <p className="max-w-[440px] font-body text-base leading-relaxed text-[var(--color-text-secondary)]">
-            Sosyal medya hesaplarımızdan güncel haberler, bakım ipuçları ve
-            kampanyalardan haberdar olun.
+            {t('home.social.description')}
           </p>
 
           <div className="flex flex-wrap items-center gap-3">
@@ -517,15 +471,14 @@ function SocialMediaSection() {
             <div className="flex flex-col">
               <span className="font-body text-sm font-bold text-white">BakıcıKolay</span>
               <span className="font-body text-xs text-white/70">
-                @bakicikolay &middot; 12.5K Takipçi
+                @bakicikolay &middot; 12.5K
               </span>
             </div>
           </div>
           <div className="flex flex-col divide-y divide-[var(--color-border)]">
             <div className="flex flex-col gap-3 px-5 py-4">
               <p className="font-body text-sm leading-relaxed text-[var(--color-text-primary)]">
-                Yeni yıl, yeni hizmetler! 2026 yılında da ailelerimizin
-                yanındayız. Detaylar için bio&apos;daki linke tıklayın.
+                {t('home.social.post1')}
               </p>
               <div className="flex items-center gap-4">
                 <span className="flex items-center gap-1 font-body text-xs text-[var(--color-text-muted)]">
@@ -541,8 +494,7 @@ function SocialMediaSection() {
             </div>
             <div className="flex flex-col gap-3 px-5 py-4">
               <p className="font-body text-sm leading-relaxed text-[var(--color-text-primary)]">
-                Profesyonel bakıcılarımızla tanışmak ister misiniz? Her hafta
-                yeni bakıcı hikayeleri paylaşıyoruz.
+                {t('home.social.post2')}
               </p>
               <div className="flex items-center gap-4">
                 <span className="flex items-center gap-1 font-body text-xs text-[var(--color-text-muted)]">
@@ -564,18 +516,47 @@ function SocialMediaSection() {
 }
 
 function BlogSection() {
+  const { t } = useTranslation();
+
+  const blogPosts = [
+    {
+      tag: t('home.blog.tagHealth'),
+      tagColor: 'bg-[var(--color-primary)]',
+      title: t('home.blog.post1'),
+      date: '15 Ocak 2026',
+    },
+    {
+      tag: t('home.blog.tagGuide'),
+      tagColor: 'bg-[var(--color-positive)]',
+      title: t('home.blog.post2'),
+      date: '12 Ocak 2026',
+    },
+    {
+      tag: t('home.blog.tagNutrition'),
+      tagColor: 'bg-[var(--color-accent-gold)]',
+      title: t('home.blog.post3'),
+      date: '8 Ocak 2026',
+    },
+    {
+      tag: t('home.blog.tagCareer'),
+      tagColor: 'bg-red-500',
+      title: t('home.blog.post4'),
+      date: '5 Ocak 2026',
+    },
+  ];
+
   return (
     <section className="w-full bg-[var(--color-black)] px-5 py-10 md:px-20 md:py-[60px]">
       <div className="mx-auto flex max-w-[1400px] flex-col gap-8">
         <div className="flex items-center justify-between">
           <h2 className="font-heading text-2xl font-bold text-white md:text-3xl">
-            Blog&apos;dan Son Yazılar
+            {t('home.blog.title')}
           </h2>
           <a
             href="/blog"
             className="hidden items-center gap-1 font-body text-sm font-medium text-[var(--color-primary-light)] transition-colors hover:text-white md:inline-flex"
           >
-            Tüm Yazıları Gör
+            {t('home.blog.viewAll')}
             <ArrowRight className="h-4 w-4" />
           </a>
         </div>
@@ -606,7 +587,7 @@ function BlogSection() {
           href="/blog"
           className="inline-flex items-center justify-center gap-1 font-body text-sm font-medium text-[var(--color-primary-light)] transition-colors hover:text-white md:hidden"
         >
-          Tüm Yazıları Gör
+          {t('home.blog.viewAll')}
           <ArrowRight className="h-4 w-4" />
         </a>
       </div>

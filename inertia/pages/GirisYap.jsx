@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@inertiajs/react';
 import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/layout/Layout';
 import { Logo } from '../components/Logo';
@@ -92,7 +92,7 @@ export default function GirisYap() {
           <p className="text-center font-body text-sm text-[var(--color-text-secondary)]">
             {t('login.actions.noAccount')}{' '}
             <Link
-              to="/kayit"
+              href="/kayit"
               className="font-semibold text-[var(--color-primary)] hover:underline"
             >
               {t('login.actions.register')}

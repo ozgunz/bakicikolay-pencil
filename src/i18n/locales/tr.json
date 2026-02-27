@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "services": "Hizmetler",
+    "about": "Hakkımızda",
+    "contact": "İletişim",
+    "requestCare": "Bakıcı Talep Et",
+    "login": "Giriş Yap"
+  },
+  "footer": {
+    "tagline": "Türkiye'nin güvenilir bakım platformu. Yaşlı ve çocuk bakımında profesyonel çözümler.",
+    "services": {
+      "title": "Hizmetler",
+      "elderly": "Yaşlı Bakımı",
+      "child": "Çocuk Bakımı",
+      "night": "Gece Bakımı",
+      "special": "Özel Bakım"
+    },
+    "corporate": {
+      "title": "Kurumsal",
+      "about": "Hakkımızda",
+      "blog": "Blog",
+      "career": "Kariyer",
+      "contact": "İletişim"
+    },
+    "legal": {
+      "title": "Yasal",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Koşulları",
+      "kvkk": "KVKK"
+    },
+    "copyright": "© 2026 BakıcıKolay.com — Tüm hakları saklıdır.",
+    "rights": "Tüm hakları saklıdır."
+  },
+  "home": {
+    "hero": {
+      "badge": "Türkiye'nin 1 Numaralı Bakım Platformu",
+      "title1": "Aileniz İçin",
+      "title2": "Güvenilir Bakım",
+      "title3": "Hizmeti",
+      "description": "Profesyonel ve güvenilir bakıcılarla ailenizin ihtiyaçlarına uygun bakım hizmeti. Yaşlı bakımı, çocuk bakımı ve özel bakım çözümlerimizle yanınızdayız.",
+      "statFamilies": "Mutlu Aile",
+      "statCaregivers": "Profesyonel Bakıcı",
+      "statSatisfaction": "Memnuniyet"
+    },
+    "form": {
+      "title": "Bakım Hizmeti Talep Et",
+      "subtitle": "Formu doldurun, size en uygun bakıcıyı bulalım.",
+      "fullName": "Ad Soyad",
+      "fullNamePlaceholder": "Adınız Soyadınız",
+      "phone": "Telefon",
+      "phonePlaceholder": "0 (5XX) XXX XX XX",
+      "serviceType": "Hizmet Türü",
+      "serviceTypePlaceholder": "Hizmet türü seçiniz",
+      "serviceElderly": "Yaşlı Bakımı",
+      "serviceChild": "Çocuk Bakımı",
+      "serviceNight": "Gece Bakımı",
+      "serviceSpecial": "Özel Bakım",
+      "preferredDate": "Tercih Edilen Tarih",
+      "note": "Not",
+      "notePlaceholder": "Eklemek istediğiniz notlar...",
+      "submit": "Ücretsiz Bakıcı Talep Et",
+      "privacy": "Bilgileriniz gizli tutulur ve 3. kişilerle paylaşılmaz."
+    },
+    "faq": {
+      "badge": "SSS",
+      "title": "Sıkça Sorulan Sorular",
+      "subtitle": "Merak ettiğiniz soruların cevaplarını burada bulabilirsiniz.",
+      "q1": "BakıcıKolay nasıl çalışır?",
+      "a1": "BakıcıKolay, ihtiyacınıza uygun bakıcıları sizinle buluşturan bir platformdur. Başvurunuzu yaptıktan sonra, uzman ekibimiz sizin için en uygun bakıcı adaylarını belirler ve sizinle paylaşır. Mülakat sürecinde yanınızda olur, hizmet başladıktan sonra da düzenli takip yaparız.",
+      "q2": "Bakıcılar nasıl seçiliyor?",
+      "a2": "Tüm bakıcı adaylarımız kapsamlı bir değerlendirme sürecinden geçer. Adli sicil kaydı, referans kontrolü, sağlık raporu ve mesleki yetkinlik değerlendirmesi yapılır. Sadece bu aşamaların tümünü başarıyla tamamlayan adaylar platformumuza kabul edilir.",
+      "q3": "Ücretlendirme nasıl yapılıyor?",
+      "a3": "Ücretlendirme hizmet türüne, süresine ve bakıcının deneyimine göre belirlenir. Şeffaf fiyatlandırma politikamız sayesinde tüm ücretleri önceden görürsünüz. Ek veya gizli ücret yoktur.",
+      "q4": "Hizmetleriniz hangi şehirlerde geçerli?",
+      "a4": "Şu anda İstanbul, Ankara, İzmir, Bursa ve Antalya başta olmak üzere Türkiye'nin 20'den fazla büyük şehrinde hizmet vermekteyiz. Kapsama alanımızı sürekli genişletiyoruz.",
+      "q5": "Bakıcımdan memnun kalmazsam ne olur?",
+      "a5": "Memnuniyet garantimiz kapsamında, bakıcınızdan memnun kalmazsanız 7 gün içinde ücretsiz bakıcı değişikliği yapıyoruz. Müşteri memnuniyeti bizim için en önemli önceliktir."
+    },
+    "testimonials": {
+      "badge": "Müşteri Yorumları",
+      "title": "Binlerce Ailenin Güvenini Kazandık",
+      "subtitle": "Müşterilerimizin deneyimlerini ve memnuniyetlerini dinleyin."
+    },
+    "social": {
+      "badge": "Sosyal Medya",
+      "title": "Bizi Takip Edin",
+      "description": "Sosyal medya hesaplarımızdan güncel haberler, bakım ipuçları ve kampanyalardan haberdar olun.",
+      "post1": "Yeni yıl, yeni hizmetler! 2026 yılında da ailelerimizin yanındayız. Detaylar için bio'daki linke tıklayın.",
+      "post2": "Profesyonel bakıcılarımızla tanışmak ister misiniz? Her hafta yeni bakıcı hikayeleri paylaşıyoruz."
+    },
+    "blog": {
+      "title": "Blog'dan Son Yazılar",
+      "viewAll": "Tüm Yazıları Gör",
+      "tagHealth": "Sağlık",
+      "tagGuide": "Rehber",
+      "tagNutrition": "Beslenme",
+      "tagCareer": "Kariyer",
+      "post1": "Yaşlı Bakımında Dikkat Edilmesi Gereken 10 Önemli Nokta",
+      "post2": "Doğru Bakıcıyı Seçmek İçin 5 Altın Kural",
+      "post3": "Çocuklarda Sağlıklı Beslenme Alışkanlıkları",
+      "post4": "Profesyonel Bakıcı Olmak: Kariyer Rehberi"
+    }
+  },
+  "services": {
+    "hero": {
+      "breadcrumb": "Hizmetler",
+      "title": "Hizmetlerimiz",
+      "description": "Yaşlı bakımından çocuk bakımına, gece bakımından özel bakıma kadar tüm ihtiyaçlarınıza profesyonel çözümler sunuyoruz."
+    },
+    "section": {
+      "badge": "Tüm Hizmetlerimiz",
+      "title": "Size Uygun Bakım Çözümünü Seçin",
+      "subtitle": "Her biri alanında uzman bakıcılarımızla, sevdikleriniz güvende."
+    },
+    "items": {
+      "elderly": {
+        "title": "Yaşlı Bakımı",
+        "description": "Deneyimli ve güvenilir bakıcılarımızla yaşlılarınız emin ellerde. Günlük yaşam desteği, ilaç takibi ve kişisel bakım hizmetleri sunuyoruz."
+      },
+      "child": {
+        "title": "Çocuk Bakımı",
+        "description": "Çocuklarınızın gelişimine katkı sağlayan, pedagojik yaklaşımla çalışan profesyonel çocuk bakıcıları ile tanışın."
+      },
+      "night": {
+        "title": "Gece Bakımı",
+        "description": "Gece boyunca kesintisiz bakım hizmeti. Yaşlı veya hasta yakınlarınız için gece boyu yanlarında olan deneyimli bakıcılar."
+      },
+      "companion": {
+        "title": "Refakatçi Hizmetleri",
+        "description": "Hastane refakati, doktor ziyaretleri ve günlük işler için güvenilir refakatçi hizmeti. Her an yanınızda."
+      },
+      "home": {
+        "title": "Evde Bakım",
+        "description": "Sevdikleriniz kendi evlerinin konforunda profesyonel bakım alsın. Kişiselleştirilmiş evde bakım planları oluşturuyoruz."
+      },
+      "special": {
+        "title": "Özel Bakım",
+        "description": "Özel gereksinimli bireyler için uzmanlaşmış bakım hizmetleri. Kişiselleştirilmiş bakım planları ve deneyimli ekip."
+      }
+    },
+    "cta": {
+      "title": "Hemen Başvurun, Size Uygun Bakıcıyı Bulalım",
+      "subtitle": "Formu doldurun, ihtiyacınıza en uygun bakıcıyı en kısa sürede sizinle eşleştirelim.",
+      "requestCare": "Bakıcı Talep Et",
+      "callUs": "Bizi Arayın"
+    }
+  },
+  "serviceDetail": {
+    "hero": {
+      "breadcrumb": "Hizmet Detay",
+      "title": "Bakım Hizmeti Başvurusu",
+      "description": "İhtiyacınıza uygun hizmeti seçin, formu doldurun ve hemen başvurunuzu tamamlayın. Süreç çok basit!"
+    },
+    "steps": {
+      "selectService": "Hizmet Seçin",
+      "yourInfo": "Bilgileriniz",
+      "register": "Kayıt",
+      "whichService": "Hangi hizmete ihtiyacınız var?",
+      "continue": "Devam Et",
+      "elderlyTitle": "Yaşlı Bakımı",
+      "elderlyDesc": "Deneyimli bakıcılarımızla yaşlılarınız güvende.",
+      "childTitle": "Çocuk Bakımı",
+      "childDesc": "Çocuklarınız için güvenilir ve sevecen bakıcılar.",
+      "nightTitle": "Gece Bakımı",
+      "nightDesc": "Gece saatlerinde profesyonel bakım desteği.",
+      "specialTitle": "Özel Bakım",
+      "specialDesc": "Özel ihtiyaçlara yönelik kişiselleştirilmiş bakım.",
+      "enterInfo": "Bilgilerinizi Girin",
+      "enterInfoSub": "Lütfen bilgilerinizi eksiksiz doldurun.",
+      "fullName": "Ad Soyad",
+      "fullNamePlaceholder": "Adınız ve soyadınız",
+      "phone": "Telefon",
+      "phonePlaceholder": "05XX XXX XX XX",
+      "email": "E-posta",
+      "emailPlaceholder": "ornek@email.com",
+      "address": "Adres",
+      "addressPlaceholder": "Açık adresiniz",
+      "goBack": "Geri Dön",
+      "goToRegister": "Kayıt Adımına Geç",
+      "lastStep": "Son Adım",
+      "createAccount": "Hesabınızı Oluşturun",
+      "createAccountSub": "Başvurunuzu takip edebilmek için bir parola belirleyin.",
+      "password": "Parola",
+      "passwordPlaceholder": "En az 8 karakter",
+      "passwordConfirm": "Parola Tekrar",
+      "passwordConfirmPlaceholder": "Parolanızı tekrar girin",
+      "termsAccept": "Kullanım koşullarını ve gizlilik politikasını okudum, kabul ediyorum.",
+      "submitApplication": "Başvuruyu Tamamla",
+      "hidePassword": "Parolayı gizle",
+      "showPassword": "Parolayı göster"
+    },
+    "faq": {
+      "badge": "Sık Sorulanlar",
+      "title": "Hizmetimiz Hakkında",
+      "subtitle": "Hizmetlerimiz hakkında en çok sorulan soruların cevaplarını burada bulabilirsiniz.",
+      "q1": "Bakım hizmeti nasıl başlar?",
+      "a1": "Formu doldurduktan sonra ekibimiz sizinle iletişime geçer ve ihtiyacınıza uygun bakıcıyı eşleştiririz. İlk görüşme ücretsizdir.",
+      "q2": "Bakıcılar hangi eğitimlerden geçti?",
+      "a2": "Tüm bakıcılarımız sağlık bakanlığı onaylı eğitim programlarından mezun olmuştur ve düzenli olarak denetlenmektedir.",
+      "q3": "Ücretlendirme nasıl yapılır?",
+      "a3": "Ücretlendirme hizmet türüne ve süresine göre değişir. Detaylı fiyat bilgisi için bizimle iletişime geçebilirsiniz.",
+      "q4": "Hizmet iptali nasıl yapılır?",
+      "a4": "Hizmeti en az 24 saat önceden iptal edebilirsiniz. İptal işlemini hesabınız üzerinden veya telefon ile gerçekleştirebilirsiniz.",
+      "q5": "Acil durumlarda ne yapmalıyım?",
+      "a5": "Acil durumlarda 7/24 destek hattımızı arayabilirsiniz. Ekibimiz en kısa sürede sizinle iletişime geçecektir."
+    },
+    "contact": {
+      "phoneTitle": "Telefon ile Ulaşın",
+      "phoneNumber": "0850 123 45 67",
+      "phoneAction": "Ara",
+      "whatsappTitle": "WhatsApp ile Yazın",
+      "whatsappNumber": "+90 532 123 45 67",
+      "whatsappAction": "Yaz"
+    }
+  },
+  "about": {
+    "hero": {
+      "breadcrumb": "Hakkımızda",
+      "title": "Hakkımızda",
+      "description": "2020'den beri Türkiye'nin en güvenilir bakım platformu olarak binlerce aileye hizmet veriyoruz."
+    },
+    "story": {
+      "badge": "Hikayemiz",
+      "title": "BakıcıKolay'ın Hikayesi",
+      "p1": "2020 yılında, bakım hizmeti aramanın ne kadar zor ve güvensiz olduğunu bizzat yaşadıktan sonra BakıcıKolay'ı kurduk. Amacımız, ailelerin güvenle bakıcı bulabileceği, bakıcıların ise hak ettikleri değeri göreceği bir platform oluşturmaktı.",
+      "p2": "Bugün Türkiye'nin 20'den fazla şehrinde, 5.000'den fazla aileye hizmet veriyoruz. Her geçen gün büyüyen ekibimiz ve bakıcı ağımızla, Türkiye'nin en güvenilir bakım platformu olmaya devam ediyoruz.",
+      "mission": "Misyonumuz: Her aileye güvenilir bakım"
+    },
+    "values": {
+      "badge": "Değerlerimiz",
+      "title": "Bizi Biz Yapan Değerler",
+      "reliability": {
+        "title": "Güvenilirlik",
+        "description": "Tüm bakıcılarımız kapsamlı güvenlik kontrolünden geçer. Adli sicil kaydı, referans kontrolü ve sağlık raporu zorunludur."
+      },
+      "professionalism": {
+        "title": "Profesyonellik",
+        "description": "Alanında uzman, sertifikalı bakıcılarla çalışıyoruz. Düzenli eğitim programlarıyla kaliteyi sürekli artırıyoruz."
+      },
+      "transparency": {
+        "title": "Şeffaflık",
+        "description": "Tüm süreçlerimiz şeffaftır. Fiyatlandırma, bakıcı profilleri ve hizmet detayları açıkça paylaşılır."
+      }
+    },
+    "stats": {
+      "title": "Rakamlarla BakıcıKolay",
+      "families": "Mutlu Aile",
+      "caregivers": "Profesyonel Bakıcı",
+      "experience": "Deneyim",
+      "satisfaction": "Memnuniyet Oranı"
+    },
+    "team": {
+      "badge": "Ekibimiz",
+      "title": "Deneyimli Ekibimiz",
+      "member1": { "name": "Ahmet Yılmaz", "role": "Kurucu & CEO" },
+      "member2": { "name": "Elif Demir", "role": "Operasyon Müdürü" },
+      "member3": { "name": "Mehmet Kaya", "role": "Bakıcı İlişkileri Müdürü" }
+    },
+    "cta": {
+      "title": "Hemen Başvurun, Size Uygun Bakıcıyı Bulalım",
+      "subtitle": "Formu doldurun, ihtiyacınıza en uygun bakıcıyı en kısa sürede sizinle eşleştirelim.",
+      "requestCare": "Bakıcı Talep Et",
+      "callUs": "Bizi Arayın"
+    }
+  },
+  "contact": {
+    "hero": {
+      "breadcrumb": "İletişim",
+      "title": "İletişim",
+      "description": "Bizimle iletişime geçin, size en kısa sürede dönüş yapalım."
+    },
+    "form": {
+      "title": "Bize Mesaj Gönderin",
+      "subtitle": "Formu doldurun, en kısa sürede size dönüş yapalım.",
+      "fullName": "Ad Soyad",
+      "fullNamePlaceholder": "Adınız Soyadınız",
+      "phone": "Telefon",
+      "phonePlaceholder": "0 (5XX) XXX XX XX",
+      "email": "E-posta",
+      "emailPlaceholder": "ornek@email.com",
+      "subject": "Konu",
+      "subjectPlaceholder": "Mesajınızın konusu",
+      "message": "Mesajınız",
+      "messagePlaceholder": "Mesajınızı yazınız...",
+      "submit": "Mesaj Gönder"
+    },
+    "info": {
+      "title": "İletişim Bilgileri",
+      "phone": "Telefon",
+      "phoneValue": "0 (212) 555 00 00",
+      "email": "E-posta",
+      "emailValue": "info@bakicikolay.com",
+      "address": "Adres",
+      "addressValue": "Levent, Beşiktaş / İstanbul",
+      "hours": "Çalışma Saatleri",
+      "hoursValue": "Hafta içi 09:00 – 18:00"
+    },
+    "map": {
+      "title": "Bizi Ziyaret Edin"
+    },
+    "cta": {
+      "title": "Hemen Arayın, Yardımcı Olalım",
+      "subtitle": "Bakım hizmetleri hakkında bilgi almak için bizi arayabilir veya WhatsApp üzerinden yazabilirsiniz.",
+      "whatsapp": "WhatsApp ile Yazın"
+    }
+  },
+  "login": {
+    "title": "Giriş Yap",
+    "subtitle": "Hesabınıza giriş yaparak devam edin.",
+    "fields": {
+      "emailOrPhone": "E-posta veya Telefon",
+      "emailPlaceholder": "ornek@email.com",
+      "password": "Şifre",
+      "passwordPlaceholder": "Şifrenizi giriniz",
+      "forgotPassword": "Şifremi Unuttum"
+    },
+    "actions": {
+      "login": "Giriş Yap",
+      "or": "veya",
+      "noAccount": "Hesabınız yok mu?",
+      "register": "Ücretsiz Kayıt Ol"
+    }
+  },
+  "common": {
+    "readMore": "Detaylı Bilgi",
+    "submit": "Gönder",
+    "cancel": "İptal",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "homeBreadcrumb": "Ana Sayfa"
+  }
+}

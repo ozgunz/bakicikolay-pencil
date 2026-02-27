@@ -52,4 +52,8 @@
   .font-body {
     font-family: "DM Sans", sans-serif;
   }
+
+  button, a, [role="button"], select, input[type="submit"], input[type="button"] {
+    cursor: pointer;
+  }
 }

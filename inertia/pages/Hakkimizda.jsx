@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '@inertiajs/react';
 import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/layout/Layout';
 import {
@@ -61,7 +61,7 @@ export default function Hakkimizda() {
         style={{ background: 'var(--gradient-hero)' }}
       >
         <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-sm">
-          <Link to="/" className="text-white/60 transition-colors hover:text-white/80">
+          <Link href="/" className="text-white/60 transition-colors hover:text-white/80">
             {t('common.homeBreadcrumb')}
           </Link>
           <ChevronRight className="h-4 w-4 text-white/40" />
@@ -217,7 +217,7 @@ export default function Hakkimizda() {
           </p>
           <div className="flex w-full flex-col items-center gap-4 md:w-auto md:flex-row">
             <Link
-              to="/hizmet-detay"
+              href="/hizmet-detay"
               className="flex w-full items-center justify-center gap-2 rounded-[var(--radius-md)] bg-[var(--color-primary)] px-8 py-3.5 font-semibold text-[var(--color-text-on-primary)] transition-colors hover:bg-[var(--color-primary-dark)] md:w-auto"
             >
               {t('about.cta.requestCare')}

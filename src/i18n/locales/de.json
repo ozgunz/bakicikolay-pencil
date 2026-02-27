@@ -1,0 +1,333 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "services": "Dienstleistungen",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "requestCare": "Betreuer anfragen",
+    "login": "Anmelden"
+  },
+  "footer": {
+    "tagline": "Die vertrauenswürdige Pflegeplattform der Türkei. Professionelle Lösungen für Senioren- und Kinderbetreuung.",
+    "services": {
+      "title": "Dienstleistungen",
+      "elderly": "Seniorenbetreuung",
+      "child": "Kinderbetreuung",
+      "night": "Nachtbetreuung",
+      "special": "Spezialbetreuung"
+    },
+    "corporate": {
+      "title": "Unternehmen",
+      "about": "Über uns",
+      "blog": "Blog",
+      "career": "Karriere",
+      "contact": "Kontakt"
+    },
+    "legal": {
+      "title": "Rechtliches",
+      "privacy": "Datenschutzrichtlinie",
+      "terms": "Nutzungsbedingungen",
+      "kvkk": "Datenschutz"
+    },
+    "copyright": "© 2026 BakıcıKolay.com — Alle Rechte vorbehalten.",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "home": {
+    "hero": {
+      "badge": "Die Nr. 1 Pflegeplattform der Türkei",
+      "title1": "Zuverlässige Pflege",
+      "title2": "für Ihre",
+      "title3": "Familie",
+      "description": "Professionelle und zuverlässige Betreuer für die Bedürfnisse Ihrer Familie. Seniorenbetreuung, Kinderbetreuung und spezielle Pflegelösungen — wir sind an Ihrer Seite.",
+      "statFamilies": "Zufriedene Familien",
+      "statCaregivers": "Professionelle Betreuer",
+      "statSatisfaction": "Zufriedenheit"
+    },
+    "form": {
+      "title": "Pflegedienst anfragen",
+      "subtitle": "Füllen Sie das Formular aus, wir finden den passenden Betreuer für Sie.",
+      "fullName": "Vor- und Nachname",
+      "fullNamePlaceholder": "Ihr Vor- und Nachname",
+      "phone": "Telefon",
+      "phonePlaceholder": "0 (5XX) XXX XX XX",
+      "serviceType": "Art der Dienstleistung",
+      "serviceTypePlaceholder": "Dienstleistung auswählen",
+      "serviceElderly": "Seniorenbetreuung",
+      "serviceChild": "Kinderbetreuung",
+      "serviceNight": "Nachtbetreuung",
+      "serviceSpecial": "Spezialbetreuung",
+      "preferredDate": "Bevorzugtes Datum",
+      "note": "Anmerkung",
+      "notePlaceholder": "Ihre zusätzlichen Wünsche...",
+      "submit": "Kostenlos Betreuer anfragen",
+      "privacy": "Ihre Daten werden vertraulich behandelt und nicht an Dritte weitergegeben."
+    },
+    "faq": {
+      "badge": "FAQ",
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Hier finden Sie Antworten auf Ihre Fragen.",
+      "q1": "Wie funktioniert BakıcıKolay?",
+      "a1": "BakıcıKolay ist eine Plattform, die passende Betreuer für Ihre Bedürfnisse vermittelt. Nach Ihrer Bewerbung wählt unser Expertenteam die besten Kandidaten aus und stellt sie Ihnen vor. Wir begleiten Sie im Vorstellungsgespräch und überwachen regelmäßig nach Dienstbeginn.",
+      "q2": "Wie werden Betreuer ausgewählt?",
+      "a2": "Alle Betreuerkandidaten durchlaufen eine umfassende Überprüfung: Führungszeugnis, Referenzprüfung, Gesundheitszeugnis und berufliche Kompetenzbeurteilung. Nur Kandidaten, die alle Schritte erfolgreich abschließen, werden aufgenommen.",
+      "q3": "Wie werden die Preise berechnet?",
+      "a3": "Die Preise richten sich nach Art der Dienstleistung, Dauer und Erfahrung des Betreuers. Dank unserer transparenten Preispolitik sehen Sie alle Kosten im Voraus. Es gibt keine versteckten Gebühren.",
+      "q4": "In welchen Städten sind Ihre Dienste verfügbar?",
+      "a4": "Derzeit sind wir in über 20 Großstädten der Türkei tätig, darunter Istanbul, Ankara, Izmir, Bursa und Antalya. Wir erweitern unser Einzugsgebiet ständig.",
+      "q5": "Was passiert, wenn ich mit meinem Betreuer unzufrieden bin?",
+      "a5": "Im Rahmen unserer Zufriedenheitsgarantie tauschen wir den Betreuer innerhalb von 7 Tagen kostenlos aus. Kundenzufriedenheit hat für uns höchste Priorität."
+    },
+    "testimonials": {
+      "badge": "Kundenbewertungen",
+      "title": "Tausende Familien vertrauen uns",
+      "subtitle": "Hören Sie die Erfahrungen und Zufriedenheit unserer Kunden."
+    },
+    "social": {
+      "badge": "Soziale Medien",
+      "title": "Folgen Sie uns",
+      "description": "Bleiben Sie über aktuelle Nachrichten, Pflegetipps und Aktionen in unseren sozialen Medien informiert.",
+      "post1": "Neues Jahr, neue Dienste! Auch 2026 sind wir für Ihre Familien da. Details über den Link in der Bio.",
+      "post2": "Möchten Sie unsere professionellen Betreuer kennenlernen? Jede Woche teilen wir neue Geschichten."
+    },
+    "blog": {
+      "title": "Neueste Blog-Beiträge",
+      "viewAll": "Alle Beiträge anzeigen",
+      "tagHealth": "Gesundheit",
+      "tagGuide": "Ratgeber",
+      "tagNutrition": "Ernährung",
+      "tagCareer": "Karriere",
+      "post1": "10 wichtige Punkte bei der Seniorenbetreuung",
+      "post2": "5 goldene Regeln für die Wahl des richtigen Betreuers",
+      "post3": "Gesunde Ernährungsgewohnheiten bei Kindern",
+      "post4": "Professioneller Betreuer werden: Karriereleitfaden"
+    }
+  },
+  "services": {
+    "hero": {
+      "breadcrumb": "Dienstleistungen",
+      "title": "Unsere Dienstleistungen",
+      "description": "Von Seniorenbetreuung bis Kinderbetreuung, von Nachtbetreuung bis Spezialbetreuung — professionelle Lösungen für alle Ihre Bedürfnisse."
+    },
+    "section": {
+      "badge": "Alle Dienstleistungen",
+      "title": "Wählen Sie die passende Pflegelösung",
+      "subtitle": "Mit unseren Experten in jedem Bereich sind Ihre Liebsten in sicheren Händen."
+    },
+    "items": {
+      "elderly": {
+        "title": "Seniorenbetreuung",
+        "description": "Ihre Senioren sind in den zuverlässigen Händen unserer erfahrenen Betreuer. Unterstützung im Alltag, Medikamentenkontrolle und persönliche Pflege."
+      },
+      "child": {
+        "title": "Kinderbetreuung",
+        "description": "Lernen Sie professionelle Kinderbetreuer kennen, die mit pädagogischem Ansatz zur Entwicklung Ihrer Kinder beitragen."
+      },
+      "night": {
+        "title": "Nachtbetreuung",
+        "description": "Ununterbrochene Betreuung in der Nacht. Erfahrene Betreuer sind die ganze Nacht bei Ihren älteren oder kranken Angehörigen."
+      },
+      "companion": {
+        "title": "Begleitdienste",
+        "description": "Zuverlässige Begleitung ins Krankenhaus, zu Arztbesuchen und bei alltäglichen Besorgungen. Immer an Ihrer Seite."
+      },
+      "home": {
+        "title": "Häusliche Pflege",
+        "description": "Lassen Sie Ihre Liebsten professionelle Pflege in der Geborgenheit ihres eigenen Zuhauses erhalten. Individuelle Pflegepläne."
+      },
+      "special": {
+        "title": "Spezialbetreuung",
+        "description": "Spezialisierte Pflegedienste für Menschen mit besonderen Bedürfnissen. Individuelle Pflegepläne und erfahrenes Team."
+      }
+    },
+    "cta": {
+      "title": "Bewerben Sie sich jetzt, wir finden den passenden Betreuer",
+      "subtitle": "Füllen Sie das Formular aus, und wir vermitteln Ihnen schnellstmöglich den besten Betreuer.",
+      "requestCare": "Betreuer anfragen",
+      "callUs": "Rufen Sie uns an"
+    }
+  },
+  "serviceDetail": {
+    "hero": {
+      "breadcrumb": "Dienstleistungsdetails",
+      "title": "Pflegedienst-Bewerbung",
+      "description": "Wählen Sie die passende Dienstleistung, füllen Sie das Formular aus und schließen Sie Ihre Bewerbung ab. Ganz einfach!"
+    },
+    "steps": {
+      "selectService": "Dienst wählen",
+      "yourInfo": "Ihre Daten",
+      "register": "Registrierung",
+      "whichService": "Welche Dienstleistung benötigen Sie?",
+      "continue": "Weiter",
+      "elderlyTitle": "Seniorenbetreuung",
+      "elderlyDesc": "Ihre Senioren sind in den sicheren Händen unserer Betreuer.",
+      "childTitle": "Kinderbetreuung",
+      "childDesc": "Zuverlässige und liebevolle Betreuer für Ihre Kinder.",
+      "nightTitle": "Nachtbetreuung",
+      "nightDesc": "Professionelle Betreuung in den Nachtstunden.",
+      "specialTitle": "Spezialbetreuung",
+      "specialDesc": "Individuelle Betreuung für besondere Bedürfnisse.",
+      "enterInfo": "Geben Sie Ihre Daten ein",
+      "enterInfoSub": "Bitte füllen Sie alle Felder vollständig aus.",
+      "fullName": "Vor- und Nachname",
+      "fullNamePlaceholder": "Ihr Vor- und Nachname",
+      "phone": "Telefon",
+      "phonePlaceholder": "05XX XXX XX XX",
+      "email": "E-Mail",
+      "emailPlaceholder": "beispiel@email.com",
+      "address": "Adresse",
+      "addressPlaceholder": "Ihre vollständige Adresse",
+      "goBack": "Zurück",
+      "goToRegister": "Zur Registrierung",
+      "lastStep": "Letzter Schritt",
+      "createAccount": "Erstellen Sie Ihr Konto",
+      "createAccountSub": "Legen Sie ein Passwort fest, um Ihre Bewerbung zu verfolgen.",
+      "password": "Passwort",
+      "passwordPlaceholder": "Mindestens 8 Zeichen",
+      "passwordConfirm": "Passwort bestätigen",
+      "passwordConfirmPlaceholder": "Passwort wiederholen",
+      "termsAccept": "Ich habe die Nutzungsbedingungen und Datenschutzrichtlinie gelesen und akzeptiere sie.",
+      "submitApplication": "Bewerbung abschließen",
+      "hidePassword": "Passwort verbergen",
+      "showPassword": "Passwort anzeigen"
+    },
+    "faq": {
+      "badge": "Häufige Fragen",
+      "title": "Über unseren Service",
+      "subtitle": "Hier finden Sie Antworten auf die am häufigsten gestellten Fragen zu unseren Diensten.",
+      "q1": "Wie beginnt der Pflegedienst?",
+      "a1": "Nach dem Ausfüllen des Formulars kontaktiert unser Team Sie und vermittelt einen passenden Betreuer. Das Erstgespräch ist kostenlos.",
+      "q2": "Welche Ausbildung haben die Betreuer?",
+      "a2": "Alle unsere Betreuer haben vom Gesundheitsministerium anerkannte Ausbildungsprogramme absolviert und werden regelmäßig überprüft.",
+      "q3": "Wie werden die Preise berechnet?",
+      "a3": "Die Preise variieren je nach Art und Dauer der Dienstleistung. Für detaillierte Preisinformationen kontaktieren Sie uns bitte.",
+      "q4": "Wie kann ich den Service kündigen?",
+      "a4": "Sie können den Service mindestens 24 Stunden im Voraus stornieren. Die Stornierung ist über Ihr Konto oder telefonisch möglich.",
+      "q5": "Was soll ich in Notfällen tun?",
+      "a5": "In Notfällen können Sie unsere 24/7-Hotline anrufen. Unser Team wird sich schnellstmöglich bei Ihnen melden."
+    },
+    "contact": {
+      "phoneTitle": "Telefonisch erreichen",
+      "phoneNumber": "0850 123 45 67",
+      "phoneAction": "Anrufen",
+      "whatsappTitle": "Per WhatsApp schreiben",
+      "whatsappNumber": "+90 532 123 45 67",
+      "whatsappAction": "Schreiben"
+    }
+  },
+  "about": {
+    "hero": {
+      "breadcrumb": "Über uns",
+      "title": "Über uns",
+      "description": "Seit 2020 bedienen wir als zuverlässigste Pflegeplattform der Türkei tausende Familien."
+    },
+    "story": {
+      "badge": "Unsere Geschichte",
+      "title": "Die Geschichte von BakıcıKolay",
+      "p1": "Im Jahr 2020 gründeten wir BakıcıKolay, nachdem wir selbst erfahren hatten, wie schwierig und unsicher die Suche nach Pflegediensten sein kann. Unser Ziel war es, eine Plattform zu schaffen, auf der Familien sicher Betreuer finden und Betreuer die verdiente Anerkennung erhalten.",
+      "p2": "Heute bedienen wir über 5.000 Familien in mehr als 20 Städten der Türkei. Mit unserem wachsenden Team und Betreuernetzwerk bleiben wir die zuverlässigste Pflegeplattform der Türkei.",
+      "mission": "Unsere Mission: Zuverlässige Pflege für jede Familie"
+    },
+    "values": {
+      "badge": "Unsere Werte",
+      "title": "Die Werte, die uns ausmachen",
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Alle unsere Betreuer durchlaufen eine umfassende Sicherheitsüberprüfung. Führungszeugnis, Referenzprüfung und Gesundheitszeugnis sind obligatorisch."
+      },
+      "professionalism": {
+        "title": "Professionalität",
+        "description": "Wir arbeiten mit qualifizierten, zertifizierten Betreuern. Regelmäßige Schulungsprogramme steigern kontinuierlich die Qualität."
+      },
+      "transparency": {
+        "title": "Transparenz",
+        "description": "Alle unsere Prozesse sind transparent. Preise, Betreuerprofile und Servicedetails werden offen geteilt."
+      }
+    },
+    "stats": {
+      "title": "BakıcıKolay in Zahlen",
+      "families": "Zufriedene Familien",
+      "caregivers": "Professionelle Betreuer",
+      "experience": "Erfahrung",
+      "satisfaction": "Zufriedenheitsrate"
+    },
+    "team": {
+      "badge": "Unser Team",
+      "title": "Erfahrenes Team",
+      "member1": { "name": "Ahmet Yılmaz", "role": "Gründer & CEO" },
+      "member2": { "name": "Elif Demir", "role": "Betriebsleiterin" },
+      "member3": { "name": "Mehmet Kaya", "role": "Leiter Betreuerbeziehungen" }
+    },
+    "cta": {
+      "title": "Bewerben Sie sich jetzt, wir finden den passenden Betreuer",
+      "subtitle": "Füllen Sie das Formular aus, und wir vermitteln Ihnen schnellstmöglich den besten Betreuer.",
+      "requestCare": "Betreuer anfragen",
+      "callUs": "Rufen Sie uns an"
+    }
+  },
+  "contact": {
+    "hero": {
+      "breadcrumb": "Kontakt",
+      "title": "Kontakt",
+      "description": "Kontaktieren Sie uns, wir melden uns schnellstmöglich bei Ihnen."
+    },
+    "form": {
+      "title": "Senden Sie uns eine Nachricht",
+      "subtitle": "Füllen Sie das Formular aus, wir melden uns schnellstmöglich.",
+      "fullName": "Vor- und Nachname",
+      "fullNamePlaceholder": "Ihr Vor- und Nachname",
+      "phone": "Telefon",
+      "phonePlaceholder": "0 (5XX) XXX XX XX",
+      "email": "E-Mail",
+      "emailPlaceholder": "beispiel@email.com",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Betreff Ihrer Nachricht",
+      "message": "Ihre Nachricht",
+      "messagePlaceholder": "Schreiben Sie Ihre Nachricht...",
+      "submit": "Nachricht senden"
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "phone": "Telefon",
+      "phoneValue": "0 (212) 555 00 00",
+      "email": "E-Mail",
+      "emailValue": "info@bakicikolay.com",
+      "address": "Adresse",
+      "addressValue": "Levent, Beşiktaş / Istanbul",
+      "hours": "Öffnungszeiten",
+      "hoursValue": "Mo–Fr 09:00 – 18:00"
+    },
+    "map": {
+      "title": "Besuchen Sie uns"
+    },
+    "cta": {
+      "title": "Rufen Sie uns an, wir helfen Ihnen",
+      "subtitle": "Für Informationen über Pflegedienste können Sie uns anrufen oder über WhatsApp schreiben.",
+      "whatsapp": "Per WhatsApp schreiben"
+    }
+  },
+  "login": {
+    "title": "Anmelden",
+    "subtitle": "Melden Sie sich an, um fortzufahren.",
+    "fields": {
+      "emailOrPhone": "E-Mail oder Telefon",
+      "emailPlaceholder": "beispiel@email.com",
+      "password": "Passwort",
+      "passwordPlaceholder": "Passwort eingeben",
+      "forgotPassword": "Passwort vergessen?"
+    },
+    "actions": {
+      "login": "Anmelden",
+      "or": "oder",
+      "noAccount": "Noch kein Konto?",
+      "register": "Kostenlos registrieren"
+    }
+  },
+  "common": {
+    "readMore": "Mehr erfahren",
+    "submit": "Absenden",
+    "cancel": "Abbrechen",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "homeBreadcrumb": "Startseite"
+  }
+}

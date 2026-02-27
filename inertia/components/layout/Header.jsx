@@ -1,11 +1,15 @@
 import { Link } from '@inertiajs/react';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from '../LanguageSwitcher';
 
 export function Header({ activePage = 'anasayfa' }) {
+  const { t } = useTranslation();
+
   const navItems = [
-    { key: 'anasayfa', label: 'Ana Sayfa', href: '/' },
-    { key: 'hizmetler', label: 'Hizmetler', href: '/hizmetler' },
-    { key: 'hakkimizda', label: 'Hakkımızda', href: '/hakkimizda' },
-    { key: 'iletisim', label: 'İletişim', href: '/iletisim' },
+    { key: 'anasayfa', label: t('nav.home'), href: '/' },
+    { key: 'hizmetler', label: t('nav.services'), href: '/hizmetler' },
+    { key: 'hakkimizda', label: t('nav.about'), href: '/hakkimizda' },
+    { key: 'iletisim', label: t('nav.contact'), href: '/iletisim' },
   ];
 
   return (
@@ -35,16 +39,17 @@ export function Header({ activePage = 'anasayfa' }) {
             {item.label}
           </Link>
         ))}
+        <LanguageSwitcher />
         <Link
           href="/hizmet-detay"
           className="flex items-center gap-2 px-7 py-3 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[var(--color-primary-dark)] transition-colors"
         >
-          Başvuru Yap
+          {t('nav.requestCare')}
         </Link>
       </nav>
 
       {/* Mobile Menu Button */}
-      <button className="md:hidden flex items-center justify-center w-10 h-10" aria-label="Menü">
+      <button className="md:hidden flex items-center justify-center w-10 h-10" aria-label="Menu">
         <svg className="w-6 h-6 text-[var(--color-text-primary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
         </svg>

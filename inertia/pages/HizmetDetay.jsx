@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { Layout } from '../components/layout/Layout';
 import {
   ChevronRight,
@@ -16,73 +17,14 @@ import {
 } from 'lucide-react';
 
 /* ------------------------------------------------------------------ */
-/*  Data                                                               */
-/* ------------------------------------------------------------------ */
-
-const services = [
-  {
-    id: 'yasli',
-    icon: <HeartHandshake className="w-6 h-6 text-[var(--color-primary)]" />,
-    title: 'Yaşlı Bakımı',
-    description: 'Deneyimli bakıcılarımızla yaşlılarınız güvende.',
-  },
-  {
-    id: 'cocuk',
-    icon: <Baby className="w-6 h-6 text-[var(--color-primary)]" />,
-    title: 'Çocuk Bakımı',
-    description: 'Çocuklarınız için güvenilir ve sevecen bakıcılar.',
-  },
-  {
-    id: 'gece',
-    icon: <Moon className="w-6 h-6 text-[var(--color-primary)]" />,
-    title: 'Gece Bakımı',
-    description: 'Gece saatlerinde profesyonel bakım desteği.',
-  },
-  {
-    id: 'ozel',
-    icon: <ShieldCheck className="w-6 h-6 text-[var(--color-primary)]" />,
-    title: 'Özel Bakım',
-    description: 'Özel ihtiyaçlara yönelik kişiselleştirilmiş bakım.',
-  },
-];
-
-const faqData = [
-  {
-    question: 'Bakım hizmeti nasıl başlar?',
-    answer:
-      'Formu doldurduktan sonra ekibimiz sizinle iletişime geçer ve ihtiyacınıza uygun bakıcıyı eşleştiririz. İlk görüşme ücretsizdir.',
-  },
-  {
-    question: 'Bakıcılar hangi eğitimlerden geçti?',
-    answer:
-      'Tüm bakıcılarımız sağlık bakanlığı onaylı eğitim programlarından mezun olmuştur ve düzenli olarak denetlenmektedir.',
-  },
-  {
-    question: 'Ücretlendirme nasıl yapılır?',
-    answer:
-      'Ücretlendirme hizmet türüne ve süresine göre değişir. Detaylı fiyat bilgisi için bizimle iletişime geçebilirsiniz.',
-  },
-  {
-    question: 'Hizmet iptali nasıl yapılır?',
-    answer:
-      'Hizmeti en az 24 saat önceden iptal edebilirsiniz. İptal işlemini hesabınız üzerinden veya telefon ile gerçekleştirebilirsiniz.',
-  },
-  {
-    question: 'Acil durumlarda ne yapmalıyım?',
-    answer:
-      'Acil durumlarda 7/24 destek hattımızı arayabilirsiniz. Ekibimiz en kısa sürede sizinle iletişime geçecektir.',
-  },
-];
-
-/* ------------------------------------------------------------------ */
 /*  Sub-components                                                     */
 /* ------------------------------------------------------------------ */
 
-function StepIndicator({ currentStep }) {
+function StepIndicator({ currentStep, t }) {
   const steps = [
-    { number: 1, label: 'Hizmet Seçin' },
-    { number: 2, label: 'Bilgileriniz' },
-    { number: 3, label: 'Kayıt' },
+    { number: 1, label: t('serviceDetail.steps.selectService') },
+    { number: 2, label: t('serviceDetail.steps.yourInfo') },
+    { number: 3, label: t('serviceDetail.steps.register') },
   ];
 
   return (
@@ -125,6 +67,7 @@ function StepIndicator({ currentStep }) {
 /* ------------------------------------------------------------------ */
 
 export default function HizmetDetay() {
+  const { t } = useTranslation();
   const [currentStep, setCurrentStep] = useState(1);
   const [selectedService, setSelectedService] = useState(null);
   const [openFaq, setOpenFaq] = useState(null);
@@ -147,6 +90,41 @@ export default function HizmetDetay() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const services = [
+    {
+      id: 'yasli',
+      icon: <HeartHandshake className="w-6 h-6 text-[var(--color-primary)]" />,
+      title: t('serviceDetail.steps.elderlyTitle'),
+      description: t('serviceDetail.steps.elderlyDesc'),
+    },
+    {
+      id: 'cocuk',
+      icon: <Baby className="w-6 h-6 text-[var(--color-primary)]" />,
+      title: t('serviceDetail.steps.childTitle'),
+      description: t('serviceDetail.steps.childDesc'),
+    },
+    {
+      id: 'gece',
+      icon: <Moon className="w-6 h-6 text-[var(--color-primary)]" />,
+      title: t('serviceDetail.steps.nightTitle'),
+      description: t('serviceDetail.steps.nightDesc'),
+    },
+    {
+      id: 'ozel',
+      icon: <ShieldCheck className="w-6 h-6 text-[var(--color-primary)]" />,
+      title: t('serviceDetail.steps.specialTitle'),
+      description: t('serviceDetail.steps.specialDesc'),
+    },
+  ];
+
+  const faqData = [
+    { question: t('serviceDetail.faq.q1'), answer: t('serviceDetail.faq.a1') },
+    { question: t('serviceDetail.faq.q2'), answer: t('serviceDetail.faq.a2') },
+    { question: t('serviceDetail.faq.q3'), answer: t('serviceDetail.faq.a3') },
+    { question: t('serviceDetail.faq.q4'), answer: t('serviceDetail.faq.a4') },
+    { question: t('serviceDetail.faq.q5'), answer: t('serviceDetail.faq.a5') },
+  ];
+
   return (
     <Layout title="Hizmet Detay - BakıcıKolay" activePage="hizmetler">
       {/* ============================================================ */}
@@ -160,20 +138,19 @@ export default function HizmetDetay() {
       >
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="flex items-center gap-2">
-          <span className="font-body text-sm text-white/60">Ana Sayfa</span>
+          <span className="font-body text-sm text-white/60">{t('common.homeBreadcrumb')}</span>
           <ChevronRight className="w-4 h-4 text-white/40" />
-          <span className="font-body text-sm text-white/80">Hizmet Detay</span>
+          <span className="font-body text-sm text-white/80">{t('serviceDetail.hero.breadcrumb')}</span>
         </nav>
 
         {/* Title */}
         <h1 className="font-heading text-2xl md:text-4xl font-bold text-white text-center">
-          Bakım Hizmeti Başvurusu
+          {t('serviceDetail.hero.title')}
         </h1>
 
         {/* Description */}
         <p className="font-body text-sm md:text-base text-white/75 max-w-[550px] text-center">
-          İhtiyacınıza uygun hizmeti seçin, formu doldurun ve hemen başvurunuzu
-          tamamlayın. Süreç çok basit!
+          {t('serviceDetail.hero.description')}
         </p>
       </section>
 
@@ -182,10 +159,10 @@ export default function HizmetDetay() {
       {/* ============================================================ */}
       {currentStep === 1 && (
         <section className="flex flex-col items-center bg-[var(--color-bg)] py-[60px] px-5 md:px-[200px]">
-          <StepIndicator currentStep={1} />
+          <StepIndicator currentStep={1} t={t} />
 
           <h2 className="font-heading text-2xl font-bold text-[var(--color-text-primary)] mb-8 text-center">
-            Hangi hizmete ihtiyacınız var?
+            {t('serviceDetail.steps.whichService')}
           </h2>
 
           {/* Service Cards Grid */}
@@ -223,7 +200,7 @@ export default function HizmetDetay() {
             disabled={!selectedService}
             className="flex items-center justify-center px-12 py-3.5 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[var(--color-primary-dark)] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Devam Et
+            {t('serviceDetail.steps.continue')}
           </button>
         </section>
       )}
@@ -233,15 +210,15 @@ export default function HizmetDetay() {
       {/* ============================================================ */}
       {currentStep === 2 && (
         <section className="flex flex-col items-center bg-[var(--color-white)] py-[60px] px-5 md:px-[300px]">
-          <StepIndicator currentStep={2} />
+          <StepIndicator currentStep={2} t={t} />
 
           {/* Form Header */}
           <div className="flex flex-col items-center gap-2 mb-8">
             <h2 className="font-heading text-2xl font-bold text-[var(--color-text-primary)] text-center">
-              Bilgilerinizi Girin
+              {t('serviceDetail.steps.enterInfo')}
             </h2>
             <p className="font-body text-sm text-[var(--color-text-secondary)] text-center">
-              Lütfen bilgilerinizi eksiksiz doldurun.
+              {t('serviceDetail.steps.enterInfoSub')}
             </p>
           </div>
 
@@ -253,7 +230,7 @@ export default function HizmetDetay() {
                 htmlFor="fullName"
                 className="font-body text-[13px] font-medium text-[var(--color-text-primary)]"
               >
-                Ad Soyad
+                {t('serviceDetail.steps.fullName')}
               </label>
               <input
                 id="fullName"
@@ -261,7 +238,7 @@ export default function HizmetDetay() {
                 type="text"
                 value={formData.fullName}
                 onChange={handleInputChange}
-                placeholder="Adınız ve soyadınız"
+                placeholder={t('serviceDetail.steps.fullNamePlaceholder')}
                 className="h-[46px] px-4 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-white)] font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] outline-none focus:border-[var(--color-primary)] transition-colors"
               />
             </div>
@@ -272,7 +249,7 @@ export default function HizmetDetay() {
                 htmlFor="phone"
                 className="font-body text-[13px] font-medium text-[var(--color-text-primary)]"
               >
-                Telefon
+                {t('serviceDetail.steps.phone')}
               </label>
               <input
                 id="phone"
@@ -280,7 +257,7 @@ export default function HizmetDetay() {
                 type="tel"
                 value={formData.phone}
                 onChange={handleInputChange}
-                placeholder="05XX XXX XX XX"
+                placeholder={t('serviceDetail.steps.phonePlaceholder')}
                 className="h-[46px] px-4 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-white)] font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] outline-none focus:border-[var(--color-primary)] transition-colors"
               />
             </div>
@@ -291,7 +268,7 @@ export default function HizmetDetay() {
                 htmlFor="email"
                 className="font-body text-[13px] font-medium text-[var(--color-text-primary)]"
               >
-                E-posta
+                {t('serviceDetail.steps.email')}
               </label>
               <input
                 id="email"
@@ -299,7 +276,7 @@ export default function HizmetDetay() {
                 type="email"
                 value={formData.email}
                 onChange={handleInputChange}
-                placeholder="ornek@email.com"
+                placeholder={t('serviceDetail.steps.emailPlaceholder')}
                 className="h-[46px] px-4 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-white)] font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] outline-none focus:border-[var(--color-primary)] transition-colors"
               />
             </div>
@@ -310,14 +287,14 @@ export default function HizmetDetay() {
                 htmlFor="address"
                 className="font-body text-[13px] font-medium text-[var(--color-text-primary)]"
               >
-                Adres
+                {t('serviceDetail.steps.address')}
               </label>
               <textarea
                 id="address"
                 name="address"
                 value={formData.address}
                 onChange={handleInputChange}
-                placeholder="Açık adresiniz"
+                placeholder={t('serviceDetail.steps.addressPlaceholder')}
                 rows={3}
                 className="px-4 py-3 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-white)] font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] outline-none focus:border-[var(--color-primary)] transition-colors resize-none"
               />
@@ -331,14 +308,14 @@ export default function HizmetDetay() {
               onClick={() => setCurrentStep(1)}
               className="w-full md:w-auto flex items-center justify-center px-8 py-3.5 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-white)] font-body text-sm font-semibold text-[var(--color-text-primary)] hover:bg-[var(--color-bg)] transition-colors"
             >
-              Geri Dön
+              {t('serviceDetail.steps.goBack')}
             </button>
             <button
               type="button"
               onClick={() => setCurrentStep(3)}
               className="w-full md:w-auto flex items-center justify-center gap-2 px-8 py-3.5 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[var(--color-primary-dark)] transition-colors"
             >
-              Kayıt Adımına Geç
+              {t('serviceDetail.steps.goToRegister')}
               <ArrowRight className="w-4 h-4" />
             </button>
           </div>
@@ -350,21 +327,21 @@ export default function HizmetDetay() {
       {/* ============================================================ */}
       {currentStep === 3 && (
         <section className="flex flex-col items-center bg-[var(--color-bg)] py-[60px] px-5 md:px-[350px]">
-          <StepIndicator currentStep={3} />
+          <StepIndicator currentStep={3} t={t} />
 
           {/* Badge */}
           <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-[var(--color-primary-soft)] font-body text-xs font-semibold text-[var(--color-primary)] mb-4">
-            Son Adım
+            {t('serviceDetail.steps.lastStep')}
           </span>
 
           {/* Title */}
           <h2 className="font-heading text-[28px] font-bold text-[var(--color-text-primary)] mb-2 text-center">
-            Hesabınızı Oluşturun
+            {t('serviceDetail.steps.createAccount')}
           </h2>
 
           {/* Description */}
           <p className="font-body text-sm text-[var(--color-text-secondary)] mb-8 text-center max-w-[500px]">
-            Başvurunuzu takip edebilmek için bir parola belirleyin.
+            {t('serviceDetail.steps.createAccountSub')}
           </p>
 
           {/* Card */}
@@ -375,7 +352,7 @@ export default function HizmetDetay() {
                 htmlFor="password"
                 className="font-body text-[13px] font-medium text-[var(--color-text-primary)]"
               >
-                Parola
+                {t('serviceDetail.steps.password')}
               </label>
               <div className="relative">
                 <input
@@ -384,14 +361,14 @@ export default function HizmetDetay() {
                   type={showPassword ? 'text' : 'password'}
                   value={formData.password}
                   onChange={handleInputChange}
-                  placeholder="En az 8 karakter"
+                  placeholder={t('serviceDetail.steps.passwordPlaceholder')}
                   className="w-full h-[46px] px-4 pr-12 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-white)] font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] outline-none focus:border-[var(--color-primary)] transition-colors"
                 />
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
                   className="absolute right-4 top-1/2 -translate-y-1/2 text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)] transition-colors"
-                  aria-label={showPassword ? 'Parolayı gizle' : 'Parolayı göster'}
+                  aria-label={showPassword ? t('serviceDetail.steps.hidePassword') : t('serviceDetail.steps.showPassword')}
                 >
                   {showPassword ? (
                     <Eye className="w-5 h-5" />
@@ -408,7 +385,7 @@ export default function HizmetDetay() {
                 htmlFor="passwordConfirm"
                 className="font-body text-[13px] font-medium text-[var(--color-text-primary)]"
               >
-                Parola Tekrar
+                {t('serviceDetail.steps.passwordConfirm')}
               </label>
               <div className="relative">
                 <input
@@ -417,7 +394,7 @@ export default function HizmetDetay() {
                   type={showPasswordConfirm ? 'text' : 'password'}
                   value={formData.passwordConfirm}
                   onChange={handleInputChange}
-                  placeholder="Parolanızı tekrar girin"
+                  placeholder={t('serviceDetail.steps.passwordConfirmPlaceholder')}
                   className="w-full h-[46px] px-4 pr-12 rounded-[var(--radius-sm)] border border-[var(--color-border)] bg-[var(--color-white)] font-body text-sm text-[var(--color-text-primary)] placeholder:text-[var(--color-text-muted)] outline-none focus:border-[var(--color-primary)] transition-colors"
                 />
                 <button
@@ -425,7 +402,7 @@ export default function HizmetDetay() {
                   onClick={() => setShowPasswordConfirm(!showPasswordConfirm)}
                   className="absolute right-4 top-1/2 -translate-y-1/2 text-[var(--color-text-muted)] hover:text-[var(--color-text-secondary)] transition-colors"
                   aria-label={
-                    showPasswordConfirm ? 'Parolayı gizle' : 'Parolayı göster'
+                    showPasswordConfirm ? t('serviceDetail.steps.hidePassword') : t('serviceDetail.steps.showPassword')
                   }
                 >
                   {showPasswordConfirm ? (
@@ -446,8 +423,7 @@ export default function HizmetDetay() {
                 className="mt-0.5 w-4 h-4 rounded border-[var(--color-border)] accent-[var(--color-primary)]"
               />
               <span className="font-body text-sm text-[var(--color-text-secondary)] leading-relaxed">
-                Kullanım koşullarını ve gizlilik politikasını okudum, kabul
-                ediyorum.
+                {t('serviceDetail.steps.termsAccept')}
               </span>
             </label>
           </div>
@@ -458,7 +434,7 @@ export default function HizmetDetay() {
             disabled={!termsAccepted}
             className="flex items-center justify-center gap-2 w-full max-w-[740px] mt-8 py-3.5 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[var(--color-primary-dark)] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Başvuruyu Tamamla
+            {t('serviceDetail.steps.submitApplication')}
             <CircleCheck className="w-4 h-4" />
           </button>
         </section>
@@ -470,14 +446,13 @@ export default function HizmetDetay() {
       <section className="flex flex-col items-center bg-[var(--color-white)] py-[60px] px-5 md:px-[200px]">
         {/* Header */}
         <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-[var(--color-primary-soft)] font-body text-xs font-semibold text-[var(--color-primary)] mb-4">
-          Sık Sorulanlar
+          {t('serviceDetail.faq.badge')}
         </span>
         <h2 className="font-heading text-2xl font-bold text-[var(--color-text-primary)] mb-2 text-center">
-          Hizmetimiz Hakkında
+          {t('serviceDetail.faq.title')}
         </h2>
         <p className="font-body text-sm text-[var(--color-text-secondary)] mb-10 text-center max-w-[500px]">
-          Hizmetlerimiz hakkında en çok sorulan soruların cevaplarını burada
-          bulabilirsiniz.
+          {t('serviceDetail.faq.subtitle')}
         </p>
 
         {/* Accordion */}
@@ -524,16 +499,16 @@ export default function HizmetDetay() {
             <Phone className="w-6 h-6 text-[var(--color-primary)]" />
           </div>
           <h3 className="font-heading text-lg font-bold text-[var(--color-text-primary)]">
-            Telefon ile Ulaşın
+            {t('serviceDetail.contact.phoneTitle')}
           </h3>
           <span className="font-body text-sm text-[var(--color-text-secondary)]">
-            0850 123 45 67
+            {t('serviceDetail.contact.phoneNumber')}
           </span>
           <a
             href="tel:08501234567"
             className="flex items-center justify-center px-8 py-3 rounded-[var(--radius-sm)] bg-[var(--color-primary)] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[var(--color-primary-dark)] transition-colors"
           >
-            Ara
+            {t('serviceDetail.contact.phoneAction')}
           </a>
         </div>
 
@@ -543,10 +518,10 @@ export default function HizmetDetay() {
             <MessageCircle className="w-6 h-6 text-[var(--color-positive)]" />
           </div>
           <h3 className="font-heading text-lg font-bold text-[var(--color-text-primary)]">
-            WhatsApp ile Yazın
+            {t('serviceDetail.contact.whatsappTitle')}
           </h3>
           <span className="font-body text-sm text-[var(--color-text-secondary)]">
-            +90 532 123 45 67
+            {t('serviceDetail.contact.whatsappNumber')}
           </span>
           <a
             href="https://wa.me/905321234567"
@@ -554,7 +529,7 @@ export default function HizmetDetay() {
             rel="noopener noreferrer"
             className="flex items-center justify-center px-8 py-3 rounded-[var(--radius-sm)] bg-[#22C55E] font-body text-sm font-semibold text-[var(--color-text-on-primary)] hover:bg-[#16A34A] transition-colors"
           >
-            Yaz
+            {t('serviceDetail.contact.whatsappAction')}
           </a>
         </div>
       </section>

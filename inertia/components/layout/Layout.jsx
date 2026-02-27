@@ -1,4 +1,5 @@
 import { Head } from '@inertiajs/react';
+import '../../i18n';
 import { Header } from './Header';
 import { Footer } from './Footer';
 
